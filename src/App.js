@@ -51,7 +51,7 @@ function App() {
           <a href="https://leetcode.com/u/VikashMehra01/"><img src="leetcode.svg" alt="" className='leetcode'/></a>
           </div>
           <div className='icon'>
-          <a href="https://www.geeksforgeeks.org/user/2023csterb/"></a>
+          <a href="https://www.geeksforgeeks.org/user/2023csterb/"><img style={{marginTop:"0.45rem"}} src="https://img.icons8.com/color/48/GeeksforGeeks.png" alt="GeeksforGeeks" className='leetcode'/></a>
           </div>
           <div className='icon'>
           <a href="https://www.linkedin.com/in/vikash-kumar-173691287/" target='_blank'><i class="fa-brands fa-linkedin-in"></i></a>
@@ -66,6 +66,9 @@ function App() {
 
       </div>
       <div className='main-right'>
+        <div className="circle">
+
+        </div>
         <img src='/vikashkumar.png' className="thanos"/>
       </div>
     </div>

@@ -79,8 +79,8 @@ body{
   margin-right: 15rem;
 }
 .thanos{
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 35rem;
 }
 .handle{
   display: flex;
@@ -106,4 +106,12 @@ body{
 .leetcode{
   height: 2rem;
   width: 2rem;
+}
+.circle{
+  height: 35rem;
+  width: 35rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: orange;
+  z-index: -1;
 }
