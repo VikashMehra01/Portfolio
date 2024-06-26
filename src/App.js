@@ -6,12 +6,12 @@ import './App.css';
 function App() {
   
   const [text] = useTypewriter({
-    words: ['Vikash', 'Coder', 'Soul', 'Devotee'],
+    words: ['Vikash', 'Coder','Programmer','Developer', 'Soul', 'Devotee'],
     loop: {},
-    delaySpeed: 300,
-    deleteSpeed: 100,
+    delaySpeed: 1000,
+    deleteSpeed: 200,
     cursorStyle: '|',
-    typeSpeed: 100,
+    typeSpeed: 250,
   })
 
   return (
@@ -39,34 +39,34 @@ function App() {
         </p>
 
         <div className="Intro">
-          <div className="intro">I am &nbsp;f</div><div className="typing">
-            <span className="cursor">{text}<Cursor/></span></div>
+          <div className="intro">I am&nbsp;</div><div className="typing">
+            <span className="Prof">{text}<Cursor/></span></div>
         </div>
 
         <div className='about'>
-        "Ah, the futility of your pitiful civilizations. I, Thanos, am the embodiment of balance and sustainability. My Infinity Gauntlet contains the power of the six Infinity Stones, granting me the ability to erase half of all life in the universe with a mere snap of my fingers. This cruel yet necessary measure ensures that resources are conserved and the cosmos are spared from the impending collapse that your reckless consumption and overpopulation would inevitably bring. To them, I am a ghastly figure of despair. To the universe, I am its savior."
+          "As a Computer Science Engineering student at IIT Ropar, I have developed strong programming skills in C++, Java, and Python. My academic and project experiences focus on software and web development, with a keen interest in algorithms and data structures.I excel in problem-solving and technical innovation. I value collaborative environments with open communication and regular meetings. My goal is to specialize in a dynamic tech field, leveraging my expertise and passion to drive impactful projects and solutions."
         </div>
         <div className='handle'>
           <div className='icon'>
-
+          <a href="https://leetcode.com/u/VikashMehra01/"><img src="leetcode.svg" alt="" className='leetcode'/></a>
           </div>
           <div className='icon'>
-              
+          <a href="https://www.geeksforgeeks.org/user/2023csterb/"></a>
           </div>
           <div className='icon'>
-            
+          <a href="https://www.linkedin.com/in/vikash-kumar-173691287/" target='_blank'><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
           <div className='icon'>
-          
+          <a href="https://www.instagram.com/vikash_mehra23/" target='_blank'><i class="fa-brands fa-square-instagram"></i></a>
           </div>
           <div className='icon'>
-          
+          <i class="fa-brands fa-behance"></i>
           </div>
         </div>
 
       </div>
       <div className='main-right'>
-        <img src='/Thanos.png' className="thanos"/>
+        <img src='/vikashkumar.png' className="thanos"/>
       </div>
     </div>
     </>
