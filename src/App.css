@@ -115,3 +115,89 @@ body{
   background-color: orange;
   z-index: -1;
 }
+/*My Service*/
+.MyService{
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.MyService-Top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 2rem;
+
+}
+.MyService-top-heading{
+  font-size: 3rem;
+  margin: 1rem;
+  font-weight: 700;
+}
+#MyService-Two{
+  color: orange;
+}
+.MyService-top-about{
+  color: rgb(25, 25, 25);
+  font-size: 1rem;
+}
+.bottom-bar{
+  width: 10rem;
+  height: .25rem;
+  background-color: orange;
+  margin: 1rem;
+  border-radius: 16px;
+}
+.bottom{
+  display: flex;
+  justify-content: center;
+}
+
+.MyService-bottom{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+  width: 80%;
+
+}
+.MyService-box{
+  border: 1px solid rgb(187, 186, 186);
+  border-radius: 4px;
+  margin: 5%;
+  padding: 3rem;
+  color: rgb(42, 42, 42);
+  background-color: white;
+}
+.box-icon{
+  color:orange;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.MyService-box-heading{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+.MyService-box-content{
+  font-size: 1.25rem;
+
+}
+.MyService-box:hover{
+  background-color: orange;
+  color: white;
+  i{
+    color: white;
+  }
+}

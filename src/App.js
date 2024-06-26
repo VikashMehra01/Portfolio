@@ -1,6 +1,7 @@
 import React ,{useState} from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import './App.css';
+import MyService from './Components/MyService';
 
 
 function App() {
@@ -48,19 +49,19 @@ function App() {
         </div>
         <div className='handle'>
           <div className='icon'>
-          <a href="https://leetcode.com/u/VikashMehra01/"><img src="leetcode.svg" alt="" className='leetcode'/></a>
+          <a href="https://leetcode.com/u/VikashMehra01/" target='_blank'><img src="leetcode.svg" alt="" className='leetcode' /></a>
           </div>
           <div className='icon'>
-          <a href="https://www.geeksforgeeks.org/user/2023csterb/"><img style={{marginTop:"0.45rem"}} src="https://img.icons8.com/color/48/GeeksforGeeks.png" alt="GeeksforGeeks" className='leetcode'/></a>
+          <a href="https://www.geeksforgeeks.org/user/2023csterb/" target='_blank'><img style={{marginTop:"0.45rem"}} src="https://img.icons8.com/color/48/GeeksforGeeks.png" alt="GeeksforGeeks" className='leetcode'/></a>
           </div>
           <div className='icon'>
-          <a href="https://www.linkedin.com/in/vikash-kumar-173691287/" target='_blank'><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/in/vikash-kumar-173691287/" target='_blank'><img src="linkedin.gif" alt="" className='leetcode'/></a>
           </div>
           <div className='icon'>
-          <a href="https://www.instagram.com/vikash_mehra23/" target='_blank'><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.instagram.com/vikash_mehra23/" target='_blank'><img src="instagram.gif" alt=""  className='leetcode'style={{marginTop:"0.45rem"}}/></a>
           </div>
           <div className='icon'>
-          <i class="fa-brands fa-behance"></i>
+          <a href="https://github.com/Vikash1172" target='_blank'><img src="github.gif" alt="" style={{marginTop:"0.45rem"}} className='leetcode'/></a>
           </div>
         </div>
 
@@ -72,6 +73,7 @@ function App() {
         <img src='/vikashkumar.png' className="thanos"/>
       </div>
     </div>
+    <MyService/>
     </>
   );
 }
