@@ -7,7 +7,7 @@ import MyService from './Components/MyService';
 function App() {
   
   const [text] = useTypewriter({
-    words: ['Vikash', 'Coder','Programmer','Developer', 'Soul', 'Devotee'],
+    words: ['Vikash Mehra', 'Coder','Programmer','Developer', 'Soul', 'Devotee'],
     loop: {},
     delaySpeed: 1000,
     deleteSpeed: 200,
@@ -66,12 +66,16 @@ function App() {
 
       </div>
       <div className='main-right'>
+        <div className="img">
         <div className="circle">
         </div>
         <div className="thanos">
         <img src='/vikashkumar.png' className="thanos"/>
         </div>
+        </div>
+
       </div>
+ 
     </div>
     <MyService/>
     </>
