@@ -58,7 +58,7 @@ body{
   color: rgb(35, 35, 35);
 }
 .Intro{
-  font-size: 2.8em;
+  font-size: 3em;
   margin-bottom: 2rem;
   display: flex;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -73,7 +73,6 @@ body{
   width: 50%;
 }
 .thanos{
-  
   width:35rem;
   min-width: none;
 }
@@ -201,6 +200,12 @@ body{
   body{
     font-size: 12px;
     
+  }
+  .Intro{
+    font-size: 2.5em;
+  }
+  .about{
+    font-size: 1.2em;
   }
   .thanos{
     width:100%;
