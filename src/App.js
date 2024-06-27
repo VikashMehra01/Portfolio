@@ -38,7 +38,6 @@ function App() {
         <p className='wel'>
           WELCOME!
         </p>
-
         <div className="Intro">
           <div className="intro">I am&nbsp;</div><div className="typing">
             <span className="Prof">{text}<Cursor/></span></div>

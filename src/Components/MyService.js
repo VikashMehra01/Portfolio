@@ -21,7 +21,7 @@ function MyService() {
                         <i class="fa-brands fa-github"></i>
                         </div>
                         <div className="MyService-box-heading">
-                        <p>Web Development</p>
+                        <p>Web Developer</p>
                         </div>
                         <div className="MyService-box-content">
                         <p>Crafting interactive and dynamic websites using cutting-edge technologies and frameworks to bring ideas to life</p>

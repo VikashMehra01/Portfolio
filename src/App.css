@@ -22,7 +22,7 @@ body{
   font-family:Arial, Helvetica, sans-serif;
   font-size: 2.2rem;
   font-weight: 1000;
-  color: rgb(255, 208, 0)
+  color: rgb(255, 208, 0);
 }
 .nav-right{
   display: flex;
@@ -38,13 +38,13 @@ body{
 }
 .Main{
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: center;  
+  align-items: center;
 }
 .main-left{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   padding: 5rem;
   padding-left: 0;
   margin: 2rem;
@@ -74,13 +74,13 @@ body{
 
 .main-right{
   height:100%;
-  width: 50%;
+  width: auto;
   margin: 2rem;
   margin-right: 15rem;
 }
 .thanos{
-  height: auto;
   width: 35rem;
+  min-width: none;
 }
 .handle{
   display: flex;
