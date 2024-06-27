@@ -14,17 +14,25 @@ function App() {
     cursorStyle: '|',
     typeSpeed: 250,
   })
+  const [display,setdisplay]=useState("");
+  function show(){
+    setdisplay("flex");
+  }
+  function hide(){
+    setdisplay("none");
+  }
 
   return (
     <>
     <div className="navbar">
       <div className="nav-left">
+        <button className='button' onClick={show}><i class="fa-solid fa-bars"></i></button>
         <p id='logo'>
           PORTFOLIO
         </p>
       </div>
       <div className='nav-right'>
-        <a href='#' >HOME</a>
+        <a href='#'>HOME</a>
         <a href='#'>ABOUT</a>
         <a href='#'>SERVICE</a>
         <a href='#'>WORK</a>
@@ -32,6 +40,18 @@ function App() {
         <a href='#'>BLOG</a>
         <a href='#'>CONTACT</a>
       </div>
+    </div>
+    <div className="sidebar" style={{display:display}} onMouseEnter={show} onMouseLeave={hide}>
+        <h5>Vikash Mehra</h5>
+        <hr />
+        <a href='#' >HOME</a>
+        <a href='#'>ABOUT</a>
+        <a href='#'>SERVICE</a>
+        <a href='#'>WORK</a>
+        <a href='#'>RESUME</a>
+        <a href='#'>BLOG</a>
+        <a href='#'>CONTACT</a>
+
     </div>
     <div className='Main'>
       <div className='main-left'>

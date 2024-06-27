@@ -20,6 +20,15 @@ body{
   font-size: 2.2em;
   font-weight: 1000;
   color: rgb(255, 208, 0);
+  display: flex;
+}
+.button{
+  height: 2rem;
+  width: 2rem;
+  display: none;
+  border: none;
+  background-color: transparent;
+  margin:0 0.75rem 0 0.5rem;
 }
 .nav-right{
   display: flex;
@@ -34,6 +43,36 @@ body{
   font-weight: 600;
   color: rgb(61, 60, 60);
 }
+.sidebar{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100vh;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.665);
+  /* border: 2px solid orange; */
+  box-shadow: 1px 1px 1px 1px rgba(93, 93, 92, 0.296);
+  padding: 1rem 1rem 1rem 1.5rem;
+  animation: slider 0.15s ease-in-out ;
+
+}
+.sidebar a{
+  text-decoration: none;
+  margin-top: 1rem;
+  color:peru;
+}
+@keyframes slider {
+  0%{
+    transform: translateX(-50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+  
+}
 .Main{
   display: flex;
   justify-content:space-between;  
@@ -43,7 +82,7 @@ body{
 }
 .main-left{
   display: flex;
-  width: 50%;
+  width: 60%;
   flex-direction: column;
   padding: 0 5rem 0 0;
 }
@@ -70,11 +109,14 @@ body{
 }
 
 .main-right{
-  width: 50%;
+  width: 40%;
 }
 .thanos{
   width:35rem;
   min-width: none;
+}
+.img{
+  padding: 0 6rem 0 6rem;
 }
 .handle{
   display: flex;
@@ -201,6 +243,12 @@ body{
     font-size: 12px;
     
   }
+  .button{
+    display: block;
+  }
+  .button i{
+    font-size: 1.2rem;
+  }
   .Intro{
     font-size: 2.35em;
   }
@@ -211,6 +259,9 @@ body{
     width:100%;
     height: auto;
     object-fit: contain;
+  }
+  .img{
+    padding: 0;
   }
   .circle{
     width: 70vw;
@@ -244,6 +295,7 @@ body{
   .nav-right{
     overflow: auto;
     margin-left: 0.25rem;
+    display: none;
   }
   .icon{
     width: 2rem;
