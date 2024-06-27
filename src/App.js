@@ -67,9 +67,10 @@ function App() {
       </div>
       <div className='main-right'>
         <div className="circle">
-
         </div>
+        <div className="thanos">
         <img src='/vikashkumar.png' className="thanos"/>
+        </div>
       </div>
     </div>
     <MyService/>

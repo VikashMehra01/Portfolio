@@ -15,7 +15,7 @@ function MyService() {
             </div>
         </div>
         <div className="bottom">
-            <div className="MyService-bottom">
+        <div className="MyService-bottom">
                 <div className="MyService-box" >
                         <div className="box-icon" >
                         <i class="fa-brands fa-github"></i>
