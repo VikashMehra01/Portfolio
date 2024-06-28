@@ -2,6 +2,7 @@ import React ,{useState} from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import './App.css';
 import MyService from './Components/MyService';
+import MyWork from './Components/MyWork';
 
 
 function App() {
@@ -98,6 +99,7 @@ function App() {
  
     </div>
     <MyService/>
+    <MyWork/>
     </>
   );
 }
