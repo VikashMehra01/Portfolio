@@ -33,10 +33,10 @@ function App() {
         </p>
       </div>
       <div className='nav-right'>
-        <a href='#'>HOME</a>
-        <a href='#'>ABOUT</a>
-        <a href='#'>SERVICE</a>
-        <a href='#'>WORK</a>
+        <a href='#Home'>HOME</a>
+        <a href='#Home'>ABOUT</a>
+        <a href='#MyService'>SERVICE</a>
+        <a href='#MyWork'>WORK</a>
         <a href='#'>RESUME</a>
         <a href='#'>BLOG</a>
         <a href='#'>CONTACT</a>
@@ -45,16 +45,16 @@ function App() {
     <div className="sidebar" style={{display:display}} onMouseEnter={show} onMouseLeave={hide}>
         <h5>Vikash Mehra</h5>
         <hr />
-        <a href='#' >HOME</a>
-        <a href='#'>ABOUT</a>
-        <a href='#'>SERVICE</a>
-        <a href='#'>WORK</a>
+        <a href='#Home' >HOME</a>
+        <a href='#Home'>ABOUT</a>
+        <a href='#MyService'>SERVICE</a>
+        <a href='#MyWork'>WORK</a>
         <a href='#'>RESUME</a>
         <a href='#'>BLOG</a>
         <a href='#'>CONTACT</a>
 
     </div>
-    <div className='Main'>
+    <div className='Main' id='Home'>
       <div className='main-left'>
         <p className='wel'>
           WELCOME!

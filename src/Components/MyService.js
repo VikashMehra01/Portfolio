@@ -2,7 +2,7 @@ import React, { StrictMode } from 'react'
 function MyService() {
 
   return (
-    <div className='MyService'>
+    <div className='MyService' id='MyService'>
         <div className="MyService-Top">
             <div className="MyService-top-heading">
                 <span id='MyService-One'>My</span>&nbsp;<span id='MyService-Two'>Service</span>

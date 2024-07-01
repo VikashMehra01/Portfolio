@@ -116,7 +116,7 @@ body{
   min-width: none;
 }
 .img{
-  padding: 0 6rem 0 6rem;
+  /* padding: 0 6rem 0 6rem; */
 }
 .handle{
   display: flex;
@@ -169,7 +169,6 @@ body{
   justify-content: center;
   align-items: center;
   margin: 2rem;
-
 }
 .MyService-top-heading{
   font-size: 3em;
@@ -293,10 +292,72 @@ body{
   border: none;
   font-weight: 500;
 }
-.MyWork-nav-button:focus{
+.active{
   background-color: orange;
   color: white;
 }
+/* .MyWork-nav-button:focus {
+  background-color: orange;
+  color: white;
+} */
+.MyWork-bottom-Work{
+  width: 80%;
+  float: left;
+  columns:3;
+}
+.Work{
+  width: minmax(200px,1fr);
+  margin: 0.25rem auto;
+  position: relative;
+}
+.Work img{
+  width:100%;
+  width:100%;
+  vertical-align: center;
+}
+.Work-info{
+  display: none;
+  position:absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(104, 104, 104, 0.317);
+}
+.Work-info h5{
+  position: absolute;
+  top: 0;
+}
+.Work-info a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 0.25rem;
+}
+.Work:hover{
+  .Work-info{
+    display: block;;
+  }
+}
+.level-2{
+  display: block;
+}
+.LoadMore button{
+  border: none;
+  background-color: orange;
+  border-radius: 4px;
+  color: white;
+  font-size: 2em;
+  width: 5rem;
+  margin: 0.25rem auto;
+  padding: 0.1rem;
+
+}
+.LoadMore button:focus{
+    outline: none;
+}
+
+
 
 
 /*Medida query*/
