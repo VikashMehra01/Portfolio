@@ -8,7 +8,7 @@ import MyWork from './Components/MyWork';
 function App() {
   
   const [text] = useTypewriter({
-    words: ['Vikash Mehra', 'Coder',,'Developer','Programmer', 'Gamer', ],
+    words: ['Vikash Mehra', 'Coder','Developer','Programmer', 'Gamer' ],
     loop: {},
     delaySpeed: 1000,
     deleteSpeed: 200,
