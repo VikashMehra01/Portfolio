@@ -110,9 +110,10 @@ body{
 
 .main-right{
   width: 40%;
+  padding: 0 2rem 0 2rem;
 }
 .thanos{
-  width:35rem;
+  width:100%;
   min-width: none;
 }
 .img{
@@ -144,8 +145,8 @@ body{
   width: 2rem;
 }
 .circle{
-  height: 35rem;
-  width: 35rem;
+  height: 32rem;
+  width: 32rem;
   border-radius: 50%;
   position: absolute;
   background-color: orange;
@@ -301,7 +302,7 @@ body{
   color: white;
 } */
 .MyWork-bottom-Work{
-  width: 80%;
+  width: 70%;
   float: left;
   columns:3;
 }
@@ -321,26 +322,29 @@ body{
   top: 0;
   height: 100%;
   width: 100%;
+  
   background-color: rgba(104, 104, 104, 0.317);
 }
 .Work-info h5{
   position: absolute;
-  top: 0;
+  font-size: 2em;
+  top: 4px;
+  left: 6px;
+  color: orange;
+
 }
 .Work-info a{
   text-decoration: none;
-  color: black;
+  color:blue;
   font-size: 1.2em;
   position: absolute;
-  bottom: 0.25rem;
+  bottom: 0.5rem;
+  right: 4px;
 }
 .Work:hover{
   .Work-info{
-    display: block;;
+    display: block;
   }
-}
-.level-2{
-  display: block;
 }
 .LoadMore button{
   border: none;

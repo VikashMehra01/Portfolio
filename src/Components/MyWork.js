@@ -67,30 +67,24 @@ export default function MyWork() {
                     <img src='lang.jpg'/>
                     <div className='Work-info'>
                         <h5>Development</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
                 <div className='Work level-1'>
                     <img src='data.jpg' />
                     <div className='Work-info'>
                         <h5>Development</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
                 <div className="Work level-1">
                     <img src="Programming.jpg" alt="" />
                     <div className='Work-info'>
                         <h5>Development</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
-                <div className="Work level-1">
-                    <img src="game.jpg" alt="" />
-                    <div className='Work-info'>
-                        <h5>Development</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
-                    </div>
-                </div>
+
                 </>
                 )}
                 {Design && (
@@ -99,21 +93,21 @@ export default function MyWork() {
                     <img src='HTML.jpg' />
                     <div className='Work-info'>
                         <h5>Design</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
                 <div className="Work level-1">
                     <img src="Webdesign.jpg" alt=""  />
                     <div className='Work-info'>
                         <h5>Design</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
                 <div className="Work level-1">
                     <img src="UX.jpg" alt="" />
                     <div className='Work-info'>
                         <h5>Design</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
                 </>
@@ -121,19 +115,20 @@ export default function MyWork() {
                 {Photography && (
                 <>
                 <div className="Work level-1">
-                    <img src="photo.jpg" alt="" />
+                    <img src="Photography.jpg" alt="" />
                     <div className='Work-info'>
                         <h5>Photography</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
                 <div className="Work level-1">
-                    <img src="photo(2).jpg" alt="" />
+                    <img src="photo.jpg" alt="" />
                     <div className='Work-info'>
                         <h5>Photography</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
+
                 </>                    
                 )}
 
@@ -149,7 +144,7 @@ export default function MyWork() {
                     <img src="Website.jpg" alt="" />
                     <div className='Work-info'>
                         <h5>Design</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
 
@@ -158,18 +153,18 @@ export default function MyWork() {
                 )}
                 {Photography &&(
                     <>
-                <div className="Work level-2">
-                    <img src="Photography.jpg" alt="" />
+                <div className="Work level-1">
+                    <img src="photo (2).jpg" alt="" />
                     <div className='Work-info'>
                         <h5>Photography</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
                 <div className="Work level-1">
-                    <img src="photo(3).jpg" alt="" />
+                    <img src="photo (3).jpg" alt="" />
                     <div className='Work-info'>
                         <h5>Photography</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
                     </>
@@ -180,14 +175,21 @@ export default function MyWork() {
                     <img src="App-Development.jpg" alt="" />
                     <div className='Work-info'>
                         <h5>Development</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
-                <div className="Work level-1">
-                    <img src="data(2).jpg" alt="" />
+                <div className="Work level-2">
+                    <img src="data (2).jpg" alt="" />
                     <div className='Work-info'>
                         <h5>Development</h5>
-                        <a href='https://www.youtube.com' target='_blank'>Link</a>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
+                    </div>
+                </div>
+                <div className="Work level-2">
+                    <img src="game.jpg" alt="" />
+                    <div className='Work-info'>
+                        <h5>Development</h5>
+                        <a href='https://www.youtube.com' target='_blank'>Take a Look <i class="fa-solid fa-circle-right"></i></a>
                     </div>
                 </div>
                     </>
