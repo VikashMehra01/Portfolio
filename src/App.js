@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-    <div className="navbar">
+    <div className="navbar" id='Home'>
       <div className="nav-left">
         <button className='button' onClick={show}><i class="fa-solid fa-bars"></i></button>
         <p id='logo'>
@@ -34,7 +34,7 @@ function App() {
       </div>
       <div className='nav-right'>
         <a href='#Home'>HOME</a>
-        <a href='#Home'>ABOUT</a>
+        <a href='#About'>ABOUT</a>
         <a href='#MyService'>SERVICE</a>
         <a href='#MyWork'>WORK</a>
         <a href='#'>RESUME</a>
@@ -46,7 +46,7 @@ function App() {
         <h5>Vikash Mehra</h5>
         <hr />
         <a href='#Home' >HOME</a>
-        <a href='#Home'>ABOUT</a>
+        <a href='#About'>ABOUT</a>
         <a href='#MyService'>SERVICE</a>
         <a href='#MyWork'>WORK</a>
         <a href='#'>RESUME</a>
@@ -54,7 +54,7 @@ function App() {
         <a href='#'>CONTACT</a>
 
     </div>
-    <div className='Main' id='Home'>
+    <div className='Main' id='About'>
       <div className='main-left'>
         <p className='wel'>
           WELCOME!
