@@ -1,0 +1,89 @@
+.Blog {
+  padding-top: 2rem;
+}
+.blogs {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* gap: 8%; */
+}
+.blogs-outer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 8.3%; */
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  /* margin: 12px; */
+  /* height: 450px; */
+  flex-basis: 30%;
+  margin: 1.5%;
+  position: relative;
+  /* border: 2px solid orange; */
+  box-shadow: 0px 0px 1px 2px rgb(231, 230, 230);
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+}
+.post:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+.post img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.time {
+  color: orange;
+  margin: 5px;
+}
+.post-title {
+  font-size: 1.2em;
+  color: black;
+}
+.post-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.post-button button {
+  border: none;
+  color: white;
+  background-color: orange;
+  font-size: 0.8em;
+  border-radius: 16px;
+  width: 40%;
+  padding: 2%;
+  font-weight: 500;
+}
+.post button:hover {
+  background-color: rgb(218, 218, 218);
+  color: rgb(44, 44, 44);
+}
+.buttonsm {
+  box-sizing: content-box;
+  background-color: orange;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.1ss ease-in-out;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.buttonsm:hover {
+  background-color: rgb(211, 211, 211);
+  color: black;
+}
+@media screen and (max-width: 800px) {
+  .blogs {
+    display: flex;
+    flex-direction: column;
+  }
+}
