@@ -48,7 +48,7 @@ function App() {
         </div>
       </div>
       <div
-        className="sidebar"
+        className={`sidebar ${theme ? "Dark-min" : ""}`}
         style={{ display: display }}
         onMouseEnter={show}
         onMouseLeave={hide}
@@ -61,7 +61,7 @@ function App() {
         <a href="#MyWork">WORK</a>
         <a href="#Resume">RESUME</a>
         <a href="#Blog">BLOG</a>
-        <a href="#contact">CONTACT</a>
+        <a href="#Contact">CONTACT</a>
       </div>
       <div className={` ${theme ? "" : "Dark"} Main`} id="Home">
         <div className="main-left" id="About">
