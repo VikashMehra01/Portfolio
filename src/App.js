@@ -100,7 +100,6 @@ function App() {
                 target="_blank"
               >
                 <img
-                  style={{ marginTop: "0.45rem" }}
                   src="https://img.icons8.com/color/48/GeeksforGeeks.png"
                   alt="GeeksforGeeks"
                   className="leetcode"
@@ -112,12 +111,7 @@ function App() {
                 href="https://www.linkedin.com/in/vikash-kumar-173691287/"
                 target="_blank"
               >
-                <img
-                  src="linkedin.png"
-                  alt=""
-                  className="leetcode"
-                  style={{ padding: "2px" }}
-                />
+                <img src="linkedin.png" alt="" className="leetcode" />
               </a>
             </div>
             <div className="icon">
@@ -125,22 +119,12 @@ function App() {
                 href="https://www.instagram.com/vikash_mehra23/"
                 target="_blank"
               >
-                <img
-                  src="instagram.png"
-                  alt=""
-                  className="leetcode"
-                  style={{ marginTop: "0.45rem" }}
-                />
+                <img src="instagram.png" alt="" className="leetcode" />
               </a>
             </div>
             <div className="icon">
               <a href="https://github.com/Vikash1172" target="_blank">
-                <img
-                  src="github1.png"
-                  alt=""
-                  style={{ marginTop: "0.45rem" }}
-                  className="leetcode"
-                />
+                <img src="github1.png" alt="" className="leetcode" />
               </a>
             </div>
           </div>
@@ -154,8 +138,11 @@ function App() {
           </div>
         </div>
       </div>
-      <div className={`change-theme ${theme ? "Dark" : ""}`}>
-        <button onClick={changeTheme}>
+      <div
+        className={`change-theme ${theme ? "Dark" : ""}`}
+        onClick={changeTheme}
+      >
+        <button>
           <i class="fa-solid fa-palette"></i>
         </button>
       </div>
