@@ -85,8 +85,21 @@
   font-weight: 600;
   color: rgb(61, 60, 60);
 }
+
+.sidebar-outer {
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  background-color: transparent;
+  backdrop-filter: brightness(50%);
+  /* transition: all 0.1s ease-in-out; */
+  visibility: hidden;
+}
+
 .sidebar {
-  display: none;
+  visibility: hidden;
+  display: flex;
   flex-direction: column;
   position: fixed;
   top: 0;
@@ -97,7 +110,7 @@
   background-color: rgba(0, 0, 0, 0.491);
   backdrop-filter: blur(8px);
   box-shadow: 1px 1px 1px 1px rgba(93, 93, 92, 0.296);
-  padding: 1rem 1rem 1rem 1.5rem;
+  padding: 3rem 1rem 1rem 1.5rem;
   animation: slider 0.15s ease-in-out;
   z-index: 2;
 }
@@ -105,6 +118,9 @@
   text-decoration: none;
   margin-top: 1rem;
   color: white;
+}
+.show {
+  visibility: visible;
 }
 @keyframes slider {
   0% {

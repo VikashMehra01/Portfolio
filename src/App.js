@@ -18,12 +18,9 @@ function App() {
     typeSpeed: 250,
   });
   const [theme, settheme] = useState(false);
-  const [display, setdisplay] = useState("");
+  const [display, setdisplay] = useState(false);
   function show() {
-    setdisplay("flex");
-  }
-  function hide() {
-    setdisplay("none");
+    setdisplay(!display);
   }
   function changeTheme() {
     settheme(!theme);
@@ -48,13 +45,16 @@ function App() {
         </div>
       </div>
       <div
-        className={`sidebar ${theme ? "Dark-min" : ""}`}
-        style={{ display: display }}
-        // onMouseEnter={show}
-        onMouseLeave={hide}
+        className={`sidebar-outer ${display ? "show" : ""}`}
+        onMouseEnter={show}
+      ></div>
+      <div
+        className={`sidebar ${theme ? "Dark-min" : ""} ${
+          display ? "show" : ""
+        }`}
       >
-        <h5>Vikash Mehra</h5>
-        <hr />
+        {/* <h5>Vikash Mehra</h5>
+          <hr /> */}
         <a href="#Home">HOME</a>
         <a href="#About">ABOUT</a>
         <a href="#MyService">SERVICE</a>
@@ -63,6 +63,7 @@ function App() {
         <a href="#Blog">BLOG</a>
         <a href="#Contact">CONTACT</a>
       </div>
+
       <div className={` ${theme ? "" : "Dark"} Main`} id="Home">
         <div className="main-left" id="About">
           <p className="wel">WELCOME!</p>
