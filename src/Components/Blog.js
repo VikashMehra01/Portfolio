@@ -3,11 +3,11 @@ import "./Blog.css";
 import { useState } from "react";
 import { blogs } from "../data/Blogs";
 
-export default function Blog() {
+export default function Blog({ theme }) {
   const [bloglm, setbloglm] = useState(3);
   const [bloglms, setbloglms] = useState(true);
   return (
-    <div className="Blog" id="Blog">
+    <div className={`Blog ${theme ? "" : "Dark"}`} id="Blog">
       <div className="MyWork-top">
         <div className="MyWork-top-heading">
           <span className="MyWork-first">My</span>&nbsp;

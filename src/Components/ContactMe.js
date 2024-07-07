@@ -1,13 +1,13 @@
 import React from "react";
 import "./ContactMe.css";
-import image1 from "../Assets/email.jpg";
-export default function ContactMe() {
+import image1 from "../Assets/email.png";
+export default function ContactMe({ theme }) {
   function handleSubmit(event) {
     event.preventDefault();
   }
   return (
     <>
-      <div className="Contact" id="Contact">
+      <div className={`Contact ${theme ? "" : "Dark"}`} id="Contact">
         <div className="MyWork-top">
           <div className="MyWork-top-heading">
             <span className="MyWork-first">Contact</span>&nbsp;

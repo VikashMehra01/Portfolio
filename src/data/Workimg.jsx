@@ -1,0 +1,86 @@
+export const Wimg = [
+  {
+    id: 1,
+    cat: "Photography",
+    img: "Photography.jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Photography",
+    img: "Photo.jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Photography",
+    img: "Photo (1).jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Photography",
+    img: "Photo (2).jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Design",
+    img: "HTML.jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Design",
+    img: "Website.jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Design",
+    img: "Webdesign.jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Design",
+    img: "UX.jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Design",
+    img: "lang.jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Development",
+    img: "data.jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Development",
+    img: "App-Development.jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Development",
+    img: "data (2).jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Development",
+    img: "game.jpg",
+    info: "",
+  },
+  {
+    id: 1,
+    cat: "Development",
+    img: "Programming.jpg",
+    info: "",
+  },
+];

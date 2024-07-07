@@ -17,6 +17,7 @@ function App() {
     cursorStyle: "|",
     typeSpeed: 250,
   });
+  const [theme, settheme] = useState(false);
   const [display, setdisplay] = useState("");
   function show() {
     setdisplay("flex");
@@ -24,10 +25,12 @@ function App() {
   function hide() {
     setdisplay("none");
   }
-
+  function changeTheme() {
+    settheme(!theme);
+  }
   return (
     <>
-      <div className="navbar">
+      <div className={`navbar ${theme ? "" : "Dark"}`}>
         <div className="nav-left">
           <button className="button" onClick={show}>
             <i class="fa-solid fa-bars"></i>
@@ -60,7 +63,7 @@ function App() {
         <a href="#Blog">BLOG</a>
         <a href="#contact">CONTACT</a>
       </div>
-      <div className="Main" id="Home">
+      <div className={` ${theme ? "" : "Dark"} Main`} id="Home">
         <div className="main-left" id="About">
           <p className="wel">WELCOME!</p>
           <div className="Intro">
@@ -108,7 +111,12 @@ function App() {
                 href="https://www.linkedin.com/in/vikash-kumar-173691287/"
                 target="_blank"
               >
-                <img src="linkedin.gif" alt="" className="leetcode" />
+                <img
+                  src="linkedin.png"
+                  alt=""
+                  className="leetcode"
+                  style={{ padding: "2px" }}
+                />
               </a>
             </div>
             <div className="icon">
@@ -117,7 +125,7 @@ function App() {
                 target="_blank"
               >
                 <img
-                  src="instagram.gif"
+                  src="instagram.png"
                   alt=""
                   className="leetcode"
                   style={{ marginTop: "0.45rem" }}
@@ -127,7 +135,7 @@ function App() {
             <div className="icon">
               <a href="https://github.com/Vikash1172" target="_blank">
                 <img
-                  src="github.gif"
+                  src="github1.png"
                   alt=""
                   style={{ marginTop: "0.45rem" }}
                   className="leetcode"
@@ -145,12 +153,17 @@ function App() {
           </div>
         </div>
       </div>
-      <MyService />
-      <MyWork />
-      <Resume />
-      <Blog />
-      <ContactMe />
-      <Copy />
+      <div className={`change-theme ${theme ? "Dark" : ""}`}>
+        <button onClick={changeTheme}>
+          <i class="fa-solid fa-palette"></i>
+        </button>
+      </div>
+      <MyService theme={theme} />
+      <MyWork theme={theme} />
+      <Resume theme={theme} />
+      <Blog theme={theme} />
+      <ContactMe theme={theme} />
+      <Copy theme={theme} />
     </>
   );
 }

@@ -36,14 +36,14 @@ form {
   width: 100%;
 }
 .formtitle {
-  width: 25rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-bottom: 2rem;
 }
 .formtitle h5 {
   font-size: 2em;
-  color: black;
+  /* color: black; */
   font-weight: 700;
 }
 .ContactInfo form {
