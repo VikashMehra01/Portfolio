@@ -50,7 +50,7 @@ function App() {
       <div
         className={`sidebar ${theme ? "Dark-min" : ""}`}
         style={{ display: display }}
-        onMouseEnter={show}
+        // onMouseEnter={show}
         onMouseLeave={hide}
       >
         <h5>Vikash Mehra</h5>
