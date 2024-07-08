@@ -104,8 +104,8 @@
   right: 0;
   background-color: transparent;
   backdrop-filter: brightness(50%);
-  /* transition: all 0.1s ease-in-out; */
   visibility: hidden;
+  z-index: 3;
 }
 
 .sidebar {
@@ -123,7 +123,7 @@
   box-shadow: 1px 1px 1px 1px rgba(93, 93, 92, 0.296);
   padding: 3rem 1rem 1rem 1.5rem;
   animation: slider 0.15s ease-in-out;
-  z-index: 2;
+  z-index: 3;
 }
 .sidebar a {
   text-decoration: none;
@@ -149,7 +149,6 @@
   padding: 1.5rem 1rem 5rem 1rem;
   /* margin: 2rem 0; */
   /* z-index: -2; */
-
   width: 100%;
 }
 .main-left {
