@@ -8,19 +8,19 @@ export const Wimg = [
   {
     id: 1,
     cat: "Photography",
-    img: "photography.jpg",
+    img: "Photography.jpg",
     info: "",
   },
   {
     id: 1,
     cat: "Photography",
-    img: "photography (1).jpg",
+    img: "Photography (1).jpg",
     info: "",
   },
   {
     id: 1,
     cat: "Photography",
-    img: "photography (2).jpg",
+    img: "Photography (2).jpg",
     info: "",
   },
   {
