@@ -8,7 +8,7 @@ export const Wimg = [
   {
     id: 1,
     cat: "Photography",
-    img: "Photography.jpg",
+    img: "Photography (0).jpg",
     info: "",
   },
   {
