@@ -2,6 +2,7 @@ import React from "react";
 import "./Blog.css";
 import { useState } from "react";
 import { blogs } from "../data/Blogs";
+import { Link } from "react-router-dom";
 
 export default function Blog({ theme }) {
   const [bloglm, setbloglm] = useState(3);
@@ -67,7 +68,9 @@ function BlogPost({ item }) {
         <div className="time">&#9200; | {item.date}&nbsp;</div>
         {item.about}
         <div className="post-button">
-          <button>Read More</button>
+          <button>
+            <Link to={`/blogs/${item.id}`}>Read More</Link>
+          </button>
         </div>
       </div>
     </>

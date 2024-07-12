@@ -51,6 +51,11 @@
   display: flex;
   justify-content: center;
   padding-top: 2rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 .post-button button {
   border: none;
