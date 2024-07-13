@@ -3,19 +3,35 @@
   padding: 0;
   margin: 0;
 }
-/* .BlogDetailMain {
-  display: flex;
-} */
+.BlogDetailMain {
+  height: 100%;
+}
 /* .BlogDetailContent {
   width: 50%;
 } */
+.BlogDetailtop {
+  display: flex;
+  position: relative;
+}
 .BlogDetailBack {
-  width: 100%;
-  text-align: center;
-  font-size: 1.5em;
-  padding: 1rem;
+  position: absolute;
+  text-align: left;
+  font-size: 1.7em;
+  padding: 1rem 1rem 0 1rem;
   a {
     text-decoration: none;
+  }
+  i {
+    margin-right: 0.5rem;
+  }
+}
+.BlogDetailfirst {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  h3 {
+    font-size: 2.3em;
   }
 }
 .BlogDetailTitle {
@@ -24,12 +40,12 @@
   }
 }
 .BlogDetailData {
-  padding: 0 1rem 1rem 2rem;
+  padding: 0 1rem 1rem 1rem;
 }
 .BlogDetailTime {
   color: orange;
   font-size: 1.25em;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
 }
 .BlogDetailContentDo {
   padding: 1rem;
@@ -44,9 +60,11 @@
 .BlogDetailImg {
   float: left;
   width: 50%;
-  padding: 1rem 1rem 0 2rem;
+  padding: 0 1rem 0 1rem;
+
   img {
     width: 100%;
+    border-radius: 8px;
   }
 }
 .footer {
@@ -54,4 +72,22 @@
   padding: 0.75rem;
   position: fixed;
   bottom: 0;
+}
+@media screen and (max-width: 800px) {
+  .BlogDetailImg {
+    float: none;
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+  .BlogDetailTime,
+  .BlogDetailTitle {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .BlogDetailTime {
+    padding-bottom: 1rem;
+  }
+  .BlogDetailData {
+    font-size: 1.1em;
+  }
 }

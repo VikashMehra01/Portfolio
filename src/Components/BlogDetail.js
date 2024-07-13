@@ -10,9 +10,19 @@ export default function BlogDetail({ theme }) {
   const data = blogs.filter((a) => a.id == id)[0];
   console.log(data);
   return (
-    <div className={`BlogDetail ${theme ? "" : "Dark"}`}>
-      <div className="BlogDetailBack">
-        <Link to={"/"}>Back To Homepage</Link>
+    <div className={`BlogDetail ${theme ? " " : "Dark"}`}>
+      <div className="BlogDetailtop">
+        <div className="BlogDetailBack">
+          <Link to={"/"}>
+            <h3>
+              <i class="fa-solid fa-house"></i>
+              <i class="fa-solid fa-left-long"></i>
+            </h3>
+          </Link>
+        </div>
+        <div className="BlogDetailfirst">
+          <h3>Blog Detail</h3>
+        </div>
       </div>
       <div className="BlogDetailMain">
         <div className="BlogDetailImg">

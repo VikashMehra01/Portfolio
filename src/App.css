@@ -148,7 +148,7 @@
   align-items: center;
   padding: 1.5rem 1rem 5rem 1rem;
   /* margin: 2rem 0; */
-  /* z-index: -2; */
+  z-index: -2;
   width: 100%;
 }
 .main-left {
