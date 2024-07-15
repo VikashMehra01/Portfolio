@@ -25,7 +25,9 @@ function App() {
         </button>
       </div>
       <Navbar theme={theme} />
-      <About theme={theme} />
+      <div className="About-outer">
+        <About theme={theme} />
+      </div>
       <MyService theme={theme} />
       <MyWork theme={theme} />
       <Resume theme={theme} />
