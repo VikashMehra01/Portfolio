@@ -42,13 +42,13 @@ export default function Blog({ theme }) {
         )}
         {!bloglms && (
           <div
-            className="buttonsm"
+            className="buttonsm sl"
             onClick={() => {
               setbloglm(3);
               setbloglms(!bloglms);
             }}
           >
-            Show Less
+            <a href="#Blog">Show Less</a>
           </div>
         )}
       </div>
@@ -61,16 +61,16 @@ function BlogPost({ item }) {
   return (
     <>
       <div className="post">
-        <div className="blog-img">
+        <div className="post-img">
           <img src={item.img} alt="" />
         </div>
         <div className="post-title">{item.title}</div>
         <div className="time">&#9200; | {item.date}&nbsp;</div>
-        {item.about}
+        <div className="post-content">{item.about}</div>
         <div className="post-button">
-          <button>
-            <Link to={`/blogs/${item.id}`}>Read More</Link>
-          </button>
+          <Link to={`/blogs/${item.id}`}>
+            <button>Read More</button>
+          </Link>
         </div>
       </div>
     </>

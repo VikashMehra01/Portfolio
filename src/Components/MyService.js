@@ -10,8 +10,8 @@ function MyService({ theme }) {
         <div className="MyWork-top-about">
           <p>
             "My Services cater to a range of industries, offering expertise in
-            Web Development, Photography, Web Design. App Development, Video
-            Editing, and SEO
+            Web Development, Web Design. App Development, Programming,
+            Photography, and SEO
           </p>
         </div>
         <div className="bottom-bar"></div>
@@ -32,20 +32,7 @@ function MyService({ theme }) {
               </p>
             </div>
           </div>
-          <div className="MyService-box">
-            <div className="box-icon">
-              <i class="fa-solid fa-camera"></i>
-            </div>
-            <div className="MyService-box-heading">
-              <p>Photography</p>
-            </div>
-            <div className="MyService-box-content">
-              <p>
-                Capturing moments and stories through the lens transforming
-                ordinary sciones into captivating visu namatives
-              </p>
-            </div>
-          </div>
+
           <div className="MyService-box">
             <div className="box-icon">
               <i class="fa-solid fa-code"></i>
@@ -79,6 +66,34 @@ function MyService({ theme }) {
           </div>
           <div className="MyService-box">
             <div className="box-icon">
+              <i class="fa-solid fa-lines-leaning"></i>
+            </div>
+            <div className="MyService-box-heading">
+              <p>Learner</p>
+            </div>
+            <div className="MyService-box-content">
+              <p>
+                Embracing knowledge and growth, exploring new subjects and
+                skills to expand horizons and enrich personal development.
+              </p>
+            </div>
+          </div>
+          <div className="MyService-box">
+            <div className="box-icon">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+            <div className="MyService-box-heading">
+              <p>Photography</p>
+            </div>
+            <div className="MyService-box-content">
+              <p>
+                Capturing moments and stories through the lens transforming
+                ordinary sciones into captivating visu namatives
+              </p>
+            </div>
+          </div>
+          <div className="MyService-box">
+            <div className="box-icon">
               <i class="fa-solid fa-headset"></i>
             </div>
             <div className="MyService-box-heading">
@@ -89,20 +104,6 @@ function MyService({ theme }) {
                 Immersed in virtual worlds, gamers engage in strategic thinking
                 and quick reflexes, transforming challenges into triumphs and
                 storytelling into interactive experiences.
-              </p>
-            </div>
-          </div>
-          <div className="MyService-box">
-            <div className="box-icon">
-              <i class="fa-solid fa-lines-leaning"></i>
-            </div>
-            <div className="MyService-box-heading">
-              <p>Learner</p>
-            </div>
-            <div className="MyService-box-content">
-              <p>
-                Embracing knowledge and growth, exploring new subjects and
-                skills to expand horizons and enrich personal development.
               </p>
             </div>
           </div>

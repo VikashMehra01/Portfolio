@@ -13,13 +13,6 @@ export default function ContactMe({ theme }) {
             <span className="MyWork-first">Contact</span>&nbsp;
             <span className="MyWork-second">Me</span>
           </div>
-          {/* <div className="MyWork-top-about" style={{ textAlign: "center" }}>
-            <p>
-              "Join me as I explore a world of ideas, technology, and life
-              lessons. Through my blogs, I share valuable insights, personal
-              stories, and practical tips for everyone."
-            </p>
-          </div> */}
           <div className="bottom-bar"></div>
         </div>
         <div className="outer-contact">

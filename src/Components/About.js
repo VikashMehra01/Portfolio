@@ -2,7 +2,7 @@ import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 export default function About({ theme }) {
   const [text] = useTypewriter({
-    words: ["Vikash Mehra", "Coder", "Developer", "Programmer", "Gamer"],
+    words: ["Vikash Mehra", "Coder", "Web Developer", "Programmer"],
     loop: {},
     delaySpeed: 1000,
     deleteSpeed: 200,

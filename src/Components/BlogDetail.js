@@ -16,7 +16,6 @@ export default function BlogDetail({ theme }) {
           <Link to={"/"}>
             <h3>
               <i class="fa-solid fa-house"></i>
-              <i class="fa-solid fa-left-long"></i>
             </h3>
           </Link>
         </div>
@@ -33,7 +32,7 @@ export default function BlogDetail({ theme }) {
             <h3>{data.title}</h3>
           </div>
           <div className="BlogDetailTime">
-            {data.time} | {data.date}
+            <i class="fa-solid fa-clock"></i> {data.time} | {data.date}
           </div>
           <div className="BlogDetailData">{data.detail}</div>
         </div>

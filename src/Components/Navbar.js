@@ -9,7 +9,11 @@ export default function Navbar({ theme }) {
     <>
       <div className={`navbar ${theme ? "" : "Dark"}`}>
         <div className="nav-left">
-          <button className="button" onClick={show}>
+          <button
+            className={`button ${theme ? "" : "Dark"}`}
+            style={{ background: "transparent" }}
+            onClick={show}
+          >
             <i class="fa-solid fa-bars"></i>
           </button>
           <p id="logo">PORTFOLIO</p>
