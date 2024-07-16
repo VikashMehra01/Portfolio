@@ -18,7 +18,11 @@ function MyService({ theme }) {
       </div>
       <div className="bottom">
         <div className="MyService-bottom">
-          <div className="MyService-box">
+          <div
+            className={` ${
+              theme ? "MyService-box-Light" : "MyService-box-Dark"
+            }`}
+          >
             <div className="box-icon">
               <i class="fa-brands fa-github"></i>
             </div>
@@ -33,7 +37,11 @@ function MyService({ theme }) {
             </div>
           </div>
 
-          <div className="MyService-box">
+          <div
+            className={` ${
+              theme ? "MyService-box-Light" : "MyService-box-Dark"
+            }`}
+          >
             <div className="box-icon">
               <i class="fa-solid fa-code"></i>
             </div>
@@ -48,7 +56,11 @@ function MyService({ theme }) {
               </p>
             </div>
           </div>
-          <div className="MyService-box">
+          <div
+            className={` ${
+              theme ? "MyService-box-Light" : "MyService-box-Dark"
+            }`}
+          >
             <div className="box-icon">
               <i class="fa-solid fa-lightbulb"></i>
             </div>
@@ -64,7 +76,11 @@ function MyService({ theme }) {
               </p>
             </div>
           </div>
-          <div className="MyService-box">
+          <div
+            className={` ${
+              theme ? "MyService-box-Light" : "MyService-box-Dark"
+            }`}
+          >
             <div className="box-icon">
               <i class="fa-solid fa-lines-leaning"></i>
             </div>
@@ -78,7 +94,11 @@ function MyService({ theme }) {
               </p>
             </div>
           </div>
-          <div className="MyService-box">
+          <div
+            className={` ${
+              theme ? "MyService-box-Light" : "MyService-box-Dark"
+            }`}
+          >
             <div className="box-icon">
               <i class="fa-solid fa-camera"></i>
             </div>
@@ -92,7 +112,11 @@ function MyService({ theme }) {
               </p>
             </div>
           </div>
-          <div className="MyService-box">
+          <div
+            className={` ${
+              theme ? "MyService-box-Light" : "MyService-box-Dark"
+            }`}
+          >
             <div className="box-icon">
               <i class="fa-solid fa-headset"></i>
             </div>

@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./ContactMe.css";
 import image1 from "../Assets/email.png";
 export default function ContactMe({ theme }) {
-  function handleSubmit(event) {
-    event.preventDefault();
-  }
+  const form = useRef();
+  const [isSending, setIsSending] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsSending(true);
+
+    emailjs
+      .sendForm(
+        "service_tk9hbwj",
+        "template_syjlp0f",
+        form.current,
+        "9xkrBqDw3VOOuEQET"
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          e.target.reset();
+          setIsSending(false);
+          setMessage("SUCCESS! Your email has been sent.");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          setIsSending(false);
+        }
+      );
+  };
   return (
     <>
       <div className={`Contact ${theme ? "" : "Dark"}`} id="Contact">
@@ -24,17 +50,27 @@ export default function ContactMe({ theme }) {
               <div className="formtitle">
                 <h5>Get in touch</h5>
               </div>
-              <form className="ContactForm" onSubmit={handleSubmit}>
+              <form className="ContactForm" ref={form} onSubmit={sendEmail}>
                 <div className="input">
-                  <input type="text" placeholder="Name" name="name" />
+                  <input type="text" placeholder="Name" name="name" required />
                 </div>
                 <div className="input">
-                  <input type="email" placeholder="email" name="email" />
+                  <input
+                    type="email"
+                    placeholder="email"
+                    name="email"
+                    required
+                  />
                 </div>
                 <div className="input">
-                  <input type="text" placeholder="subject" name="subject" />
+                  <input
+                    type="text"
+                    placeholder="subject"
+                    name="subject"
+                    required
+                  />
                 </div>
-                <div className="input">
+                <div className="input" required>
                   <textarea
                     name="message"
                     id="message"
@@ -43,10 +79,14 @@ export default function ContactMe({ theme }) {
                   />
                 </div>
                 <div className="sendmail">
-                  {/* <button>Send Email</button> */}
-                  <input type="submit" value="Send Mail" />
+                  <input
+                    type="submit"
+                    value={isSending ? "Sending..." : "Send Mail"}
+                    disabled={isSending}
+                  />
                 </div>
               </form>
+              {message && <div className="feedbackMessage">{message}</div>}
             </div>
           </div>
         </div>

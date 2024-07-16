@@ -162,10 +162,27 @@
 .Main {
   position: relative;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   padding: 2rem 1rem 7rem 1rem;
   width: 100%;
+  transform-origin: bottom;
+  animation: zoom linear;
+  /* animation-timeline: view(); */
+  /* animation-range: exit -100px;
+  overflow: clip; */
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .main-left {
   display: flex;
@@ -341,14 +358,42 @@
   text-align: center;
   width: 65%;
 }
-.MyService-box {
+.MyService-box-Dark {
+  border-radius: 8px;
+  margin: 5%;
+  padding: 3rem;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2) 15%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  backdrop-filter: blur(8px);
+  transition: all 0.4s linear;
+  animation: box 0.4s linear;
+  animation-timeline: view(1%);
+}
+@keyframes box {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+.MyService-box-Light {
   border: 1px solid rgb(187, 186, 186);
+  background: white;
+  color: rgb(61, 61, 61);
   border-radius: 4px;
   margin: 5%;
   padding: 3rem;
-  color: rgb(61, 61, 61);
-  background-color: white;
   transition: all 0.4s linear;
+  animation: box 0.4s linear;
+  animation-timeline: view(1%);
 }
 .box-icon {
   color: orange;
@@ -366,7 +411,8 @@
 .MyService-box-content {
   font-size: 1em;
 }
-.MyService-box:hover {
+.MyService-box-Light:hover,
+.MyService-box-Dark:hover {
   background-color: orange;
   color: white;
   i {
@@ -475,6 +521,7 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
   transition: all 0.2s linear;
 }
 
@@ -558,6 +605,8 @@
   display: flex;
   width: 100%;
   height: 15rem;
+  animation: box 0.4s linear;
+  animation-timeline: view(0%);
 }
 .Resume-bar {
   width: 15%;
