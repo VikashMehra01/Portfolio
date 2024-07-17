@@ -9,14 +9,9 @@ export default function MyWork({ theme }) {
     "Photography",
     "Development",
   ]);
-  // //filtering
-  // const [Design, setDesign] = useState(true);
-  // const [Development, setDevelopment] = useState(true);
-  // const [Photography, setPhotography] = useState(true);
   function All() {
     setactive(["Design", "Photography", "Development"]);
   }
-  const opt = ["Design", "Photography", "Development"];
   function Designf() {
     setactive(["Design"]);
   }
@@ -51,7 +46,7 @@ export default function MyWork({ theme }) {
         <div className="MyWork-bottom-nav">
           <button
             className={`MyWork-nav-button ${
-              active.length == 3 ? "active" : ""
+              active.length === 3 ? "active" : ""
             }`}
             onClick={All}
           >
@@ -59,7 +54,7 @@ export default function MyWork({ theme }) {
           </button>
           <button
             className={`MyWork-nav-button ${
-              active == "Design" ? "active" : ""
+              active === "Design" ? "active" : ""
             }`}
             onClick={Designf}
           >
@@ -68,7 +63,7 @@ export default function MyWork({ theme }) {
           </button>
           <button
             className={`MyWork-nav-button ${
-              active == "Development" ? "active" : ""
+              active === "Development" ? "active" : ""
             }`}
             onClick={Developmentf}
           >
@@ -76,7 +71,7 @@ export default function MyWork({ theme }) {
           </button>
           <button
             className={`MyWork-nav-button ${
-              active == "Photography" ? "active" : ""
+              active === "Photography" ? "active" : ""
             }`}
             onClick={Photographyf}
           >
@@ -276,10 +271,10 @@ export default function MyWork({ theme }) {
 function Work({ v }) {
   return (
     <div className="Work">
-      <img src={v.img} />
+      <img src={v.img} alt="" />
       <div className="Work-info">
         <h5>{v.cat}</h5>
-        <a href="https://www.youtube.com" target="_blank">
+        <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
           Take a Look <i class="fa-solid fa-circle-right"></i>
         </a>
       </div>

@@ -7,7 +7,7 @@ import "./BlogDetail.css";
 export default function BlogDetail({ theme }) {
   let loaction = useLocation();
   let id = loaction.pathname.split("/")[2];
-  const data = blogs.filter((a) => a.id == id)[0];
+  const data = blogs.filter((a) => a.id === id)[0];
   console.log(data);
   return (
     <div className={`BlogDetail ${theme ? " " : "Dark"}`}>

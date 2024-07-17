@@ -35,12 +35,6 @@ export const Wimg = [
     img: "Website.jpg",
     info: "",
   },
-  // {
-  //   id: 1,
-  //   cat: "Design",
-  //   img: "Webdesign.jpg",
-  //   info: "",
-  // },
   {
     id: 1,
     cat: "Design",

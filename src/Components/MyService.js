@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import React from "react";
 function MyService({ theme }) {
   return (
     <div className={`MyService ${theme ? "" : "Dark"}`} id="MyService">

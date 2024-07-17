@@ -375,8 +375,6 @@
   border-radius: 8px;
   margin: 5%;
   padding: 3rem;
-  opacity: 0.5;
-  transform: scale(0.8);
   background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0.2) 15%,
@@ -393,15 +391,17 @@
     opacity: 0;
     transform: scale(0.4);
   }
-  20% {
-    opacity: 0.8;
-  }
   40% {
     opacity: 1;
     transform: scale(1);
   }
-  100% {
+  70% {
+    opacity: 1;
     transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
   }
 }
 .MyService-box-Light {

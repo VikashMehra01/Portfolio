@@ -35,7 +35,11 @@ export default function About({ theme }) {
         </div>
         <div className="handle">
           <div className="icon">
-            <a href="https://leetcode.com/u/VikashMehra01/" target="_blank">
+            <a
+              href="https://leetcode.com/u/VikashMehra01/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src="leetcode.svg" alt="" className="leetcode" />
             </a>
           </div>
@@ -43,6 +47,7 @@ export default function About({ theme }) {
             <a
               href="https://www.geeksforgeeks.org/user/2023csterb/"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 src="https://img.icons8.com/color/48/GeeksforGeeks.png"
@@ -55,17 +60,26 @@ export default function About({ theme }) {
             <a
               href="https://www.linkedin.com/in/vikash-kumar-173691287/"
               target="_blank"
+              rel="noreferrer"
             >
               <img src="linkedin.png" alt="" className="leetcode" />
             </a>
           </div>
           <div className="icon">
-            <a href="https://www.instagram.com/vikash_mehra23/" target="_blank">
+            <a
+              href="https://www.instagram.com/vikash_mehra23/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src="instagram.png" alt="" className="leetcode" />
             </a>
           </div>
           <div className="icon">
-            <a href="https://github.com/Vikash1172" target="_blank">
+            <a
+              href="https://github.com/Vikash1172"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src="github1.png" alt="" className="leetcode" />
             </a>
           </div>
@@ -75,7 +89,7 @@ export default function About({ theme }) {
         <div className="img">
           <div className="circle"></div>
           <div className="thanos">
-            <img src="/vikashkumar.png" className="thanos" />
+            <img src="/vikashkumar.png" alt="" className="thanos" />
           </div>
         </div>
       </div>
