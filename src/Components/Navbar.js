@@ -29,12 +29,12 @@ export default function Navbar({ theme }) {
         </div>
       </div>
       <div
-        className={`sidebar-outer ${display ? "show" : ""}`}
+        className={`sidebar-outer ${display ? "showOut" : ""}`}
         onMouseEnter={show}
       ></div>
       <div
         className={`sidebar ${theme ? "Dark-min" : ""} ${
-          display ? "show" : ""
+          display ? "showIn" : ""
         }`}
       >
         {/* <h5>Vikash Mehra</h5>
