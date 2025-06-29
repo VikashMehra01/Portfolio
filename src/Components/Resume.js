@@ -1,153 +1,73 @@
 import React from "react";
-export default function Resume({ theme }) {
+import "./ExperienceSkills.css";
+
+export default function ExperienceSkills({ theme }) {
   return (
-    <>
-      <div className={`Resume-outer ${theme ? "" : "Dark"}`}>
-        <div className="Resume-heading" id="Resume">
-          <span>Resume</span>
-          <div className="bottom-bar"></div>
+    <section className={`exp-skill-wrapper ${theme ? "" : "Dark"}`} id="Experience">
+      <div className="section-header">
+        <span className="MyWork-first">Experience</span>&nbsp;
+        <span className="MyWork-second">& Skills</span>
+      </div>
+
+      {/* EXPERIENCE */}
+      <div className="subsection">
+        <h2 className="sub-title">💼 Experience</h2>
+        <div className="exp-block">
+          <h3>Intern – DevAnant (2025)</h3>
+          <p>
+            Worked as a frontend intern using <strong>React.js</strong> and <strong>TailwindCSS</strong>.  
+            Built components, collaborated on internal tools, and optimized UI flow.
+          </p>
         </div>
-        <div className={`Resume `}>
-          <div className="Resume-study">
-            <div className="Resume-box">
-              <div className="Resume-bar">
-                <div className="left-bar"></div>
-                <div className="Resume-icon">
-                  <i class="fa-solid fa-pencil"></i>
-                </div>
-              </div>
-              <div className="Resume-info">
-                <div className="time">
-                  <p>2020-2021</p>
-                </div>
-                <div className="resume-heading">
-                  <p>Secondary Education</p>
-                </div>
-                <div className="resume-content">
-                  <p>
-                    Supportive environment, initial challenges, motivating
-                    friends, brilliant teachers, foundation for success.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="Resume-box">
-              <div className="Resume-bar">
-                <div className="left-bar"></div>
-                <div className="Resume-icon">
-                  <i class="fa-solid fa-pencil"></i>
-                </div>
-              </div>
-              <div className="Resume-info">
-                <div className="time">
-                  <p>2022-2023</p>
-                </div>
-                <div className="resume-heading">
-                  <p>Senior Secondary Eduacation</p>
-                </div>
-                <div className="resume-content">
-                  <p>
-                    Intense focus on exams, rigorous academics, Vikalpa's
-                    supportive teachers, motivating peers, transformative
-                    coaching for success.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="Resume-box">
-              <div className="Resume-bar">
-                <div className="Resume-icon">
-                  <i class="fa-solid fa-pencil"></i>
-                </div>
-              </div>
-              <div className="Resume-info">
-                <div className="time">
-                  <p>2023-2027</p>
-                </div>
-                <div className="resume-heading">
-                  <p>Compute Science And Engineering</p>
-                </div>
-                <div className="resume-content">
-                  <p>
-                    Engineering at IIT Ropar: Challenging projects, coding
-                    proficiency, and supportive academic environment for career
-                    preparation.
-                  </p>
-                </div>
-              </div>
-            </div>
+
+        <div className="exp-block">
+          <h3>Independent Developer</h3>
+          <p>
+            Built several tools including:
+            <ul>
+              <li><strong>Data Recovery Utility</strong> – Raw disk scan and file extraction using Qt and C++</li>
+              <li><strong>RISC-V Assembler & Simulator</strong> – Instruction decoder and runtime visualizer</li>
+              <li><strong>C to Promela Translator</strong> – Code converter using Clang AST and Python</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      {/* SKILLS */}
+      <div className="subsection">
+        <h2 className="sub-title">🛠 Skills</h2>
+        <div className="skills-grid">
+          <div>
+            <h4>Languages</h4>
+            <p>C++, Python, JavaScript, HTML, CSS, RISC-V Assembly</p>
           </div>
-          <div className="Resume-Profession">
-            <div className="Resume-box">
-              <div className="Resume-bar">
-                <div className="left-bar"></div>
-                <div className="Resume-icon">
-                  <i class="fa-solid fa-briefcase"></i>
-                </div>
-              </div>
-              <div className="Resume-info">
-                <div className="time">
-                  <p>2027</p>
-                </div>
-                <div className="resume-heading">
-                  <p>Intern At DevAnant</p>
-                </div>
-                <div className="resume-content">
-                  <p>
-                    Internship at Devanant: Hands-on experience in software
-                    development, contributing to real-world projects with
-                    mentorship support.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="Resume-box">
-              <div className="Resume-bar">
-                <div className="left-bar"></div>
-                <div className="Resume-icon">
-                  <i class="fa-solid fa-briefcase"></i>
-                </div>
-              </div>
-              <div className="Resume-info">
-                <div className="time">
-                  <p>I don't know!</p>
-                </div>
-                <div className="resume-heading">
-                  <p>may be..</p>
-                </div>
-                <div className="resume-content">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur ad, molestias
-                    pariatur quibusdam quos at eligendi. Optio, ad.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="Resume-box">
-              <div className="Resume-bar">
-                {/* <div className="left-bar"></div> */}
-                <div className="Resume-icon">
-                  <i class="fa-solid fa-briefcase"></i>
-                </div>
-              </div>
-              <div className="Resume-info">
-                <div className="time">
-                  <p>I don't know !</p>
-                </div>
-                <div className="resume-heading">
-                  <p>I really don't know !</p>
-                </div>
-                <div className="resume-content">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur voluptate perferendis
-                    est voluptas, dolorum aut tempore cum ut nam.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div>
+            <h4>Frameworks & Tools</h4>
+            <p>React.js, Qt, Next.js, TailwindCSS, Git</p>
+          </div>
+          <div>
+            <h4>Other Tech</h4>
+            <p>Clang AST, Promela/SPIN, GCC, Serial I/O</p>
+          </div>
+          <div>
+            <h4>Environments</h4>
+            <p>Linux (Mint/Ubuntu), VS Code, Windows</p>
           </div>
         </div>
       </div>
-    </>
+
+      {/* POSITIONS OF RESPONSIBILITY */}
+      <div className="subsection">
+        <h2 className="sub-title">🎯 P.O.Rs & Achievements</h2>
+        <ul className="por-list">
+          <li> Coordinator @ BOWA, IIT Ropar (Aug 2024 – May 2025)  
+        Organized wellness events and student outreach initiatives.
+        </li>
+        <li>Specialist on Codeforces (Max Rating:1416)</li>
+          <li> 3★ Rated Coder on CodeChef (Max Rating:1636)</li>
+        </ul>
+
+      </div>
+    </section>
   );
 }

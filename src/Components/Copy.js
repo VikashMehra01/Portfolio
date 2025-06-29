@@ -5,7 +5,7 @@ export default function Copy({ theme }) {
     <>
       <div className="copy-outer" style={{ position: "relative" }}>
         <div className={`footer ${theme ? "" : "Dark"}`}>
-          &copy; Vikash Mehra | 2024
+          <p>&copy;   {new Date().getFullYear()} Vikash Mehra · All rights reserved</p>
         </div>
       </div>
     </>

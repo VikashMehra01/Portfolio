@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior:auto;
   max-width: 100%;
 }
 
@@ -56,11 +56,28 @@
   border: none;
 }
 
+#Home{
+  /* margin-top: 3.5rem; */
+  width: 2.5rem;;
+}
+
+#logo{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #facc15; /* golden highlight */
+  letter-spacing: 0.5px;
+  margin-left: 0.5rem;
+}
+#logo:hover {
+  color: white;
+  transition: color 0.2s ease;
+}
 /* NavBar */
 .navbar {
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   background-color: white;
@@ -202,6 +219,7 @@
   width: 60%;
   flex-direction: column;
   padding: 0 5rem 0 0;
+  transform: translate(75px,-100px);
 }
 .wel {
   font-size: 2em;
@@ -317,6 +335,7 @@
     padding-right: 1.5rem;
   }
 }
+
 /*My Service*/
 .MyService {
   box-sizing: border-box;
@@ -335,7 +354,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   width: 100%;
 }
 .MyService-top-heading {
@@ -346,6 +365,10 @@
 #MyService-Two {
   color: orange;
 }
+
+#MyService-One {
+  color: white;
+}
 .MyService-top-about {
   color: rgb(25, 25, 25);
   font-size: 1em;
@@ -355,7 +378,7 @@
   width: 10rem;
   height: 0.25rem;
   background-color: orange;
-  margin: 1rem;
+  /* margin: 1rem; */
   border-radius: 16px;
 }
 .bottom {
@@ -422,7 +445,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.25rem;
 }
 .MyService-box-heading {
   font-weight: 700;

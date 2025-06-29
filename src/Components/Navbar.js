@@ -16,16 +16,16 @@ export default function Navbar({ theme }) {
           >
             <i class="fa-solid fa-bars"></i>
           </button>
-          <p id="logo">PORTFOLIO</p>
+          <p id="logo">Vikash Mehra</p>
         </div>
         <div className="nav-right">
-          <a href="#Home">HOME</a>
-          <a href="#About">ABOUT</a>
-          <a href="#MyService">SERVICE</a>
-          <a href="#MyWork">WORK</a>
-          <a href="#Resume">RESUME</a>
-          <a href="#Blog">BLOG</a>
-          <a href="#Contact">CONTACT</a>
+          <a href="#Home">Home</a>
+          {/* <a href="#About">ABOUT</a> */}
+          <a href="#MyService">What I Build</a>
+          <a href="#MyWork">Projects</a>
+          <a href="#Experience">Experience & Skills</a>
+          {/* <a href="#Blog">BLOG</a> */}
+          <a href="#Contact">ContactMe</a>
         </div>
       </div>
       <div

@@ -1,283 +1,78 @@
 import React from "react";
-import { useState } from "react";
-import { Wimg } from "../data/Workimg";
+import "./TimelineProjects.css";
 
-export default function MyWork({ theme }) {
-  //for nav
-  const [active, setactive] = useState([
-    "Design",
-    "Photography",
-    "Development",
-  ]);
-  function All() {
-    setactive(["Design", "Photography", "Development"]);
-  }
-  function Designf() {
-    setactive(["Design"]);
-  }
-  function Developmentf() {
-    setactive(["Development"]);
-  }
-  function Photographyf() {
-    setactive(["Photography"]);
-  }
-  //load more and hide
-  const [more, setmore] = useState(false);
-  function showmore() {
-    setmore((more) => !more);
-  }
+const projects = [
+  {
+    title: "RISC-V Assembler & Simulator",
+    description:
+      "A multi-pass assembler and simulator for RISC-V, supporting instruction decoding, memory/register simulation, and GUI integration with Qt and React.",
+    stack: "C++, Qt, React",
+    link: "https://github.com/VikashMehra01/CS204",
+    icon: "🛠️",
+  },
+  {
+    title: "Data Recovery Utility",
+    description:
+      "Signature-based tool that scans raw disk sectors to recover deleted PNG, MP3, PDF, and ZIP files using buffer-level I/O and a Qt-based GUI.",
+    stack: "C++, Qt",
+    link: "https://github.com/VikashMehra01/DataRecovery",
+    icon: "💾",
+  },
+  {
+    title: "DSA Visualizer",
+    description:
+      "Interactive algorithm visualizations (sorting, backtracking, graphs) built for intuitive learning with Next.js and React Flow.",
+    stack: "Next.js, React Flow, TypeScript",
+    link: "https://github.com/VikashMehra01/DSA-Visualizer",
+    icon: "📊",
+  },
+  {
+    title: "Startup Website",
+    description:
+      "Built a clean, responsive landing page for a startup during internship using React.js and TailwindCSS.",
+    stack: "React.js, TailwindCSS",
+    link: "https://github.com/VikashMehra01/Startup-Site",
+    icon: "🌐",
+  },{
+  title: "C to Promela Translator",
+  description:
+    "A tool that converts a restricted subset of C (functions, loops, conditionals) into Promela code for model checking. Built using Python with Clang AST integration and CFG support.",
+  stack: "Python, Clang AST, Promela, SPIN",
+  link: "https://github.com/VikashMehra01/C-to-Promela",
+  icon: "🔁",
+},{
+  title: "IoT Weather Station",
+  description:
+    "A DIY weather station built using ESP32 and sensors to capture temperature and humidity, with serial output for real-time monitoring. Created for hands-on exploration and embedded systems learning.",
+  stack: "ESP32, C++, Serial Communication",
+  link: "https://github.com/VikashMehra01/Tinkering",
+  icon: "🌦️",
+},
+];
 
+export default function TimelineProjects({ theme }) {
   return (
-    <div className={`MyWork ${theme ? "" : "Dark"}`} id="MyWork">
-      <div className="MyWork-top">
-        <div className="MyWork-top-heading">
-          <span className="MyWork-first">My</span>&nbsp;
-          <span className="MyWork-second">Work</span>
-        </div>
-        <div className="MyWork-top-about">
-          <p>
-            "My work is a fusion of creativity and technical expertise to craft
-            captivating digital experiences."
-          </p>
-        </div>
-        <div className="bottom-bar"></div>
+    <section className={`timeline-wrapper ${theme ? "" : "Dark"}`} id="MyWork">
+      <div className="timeline-header">
+        <span id="MyService-One">My</span>&nbsp;
+        <span id="MyService-Two">Projects</span>
       </div>
-      <div className="MyWork-bottom">
-        <div className="MyWork-bottom-nav">
-          <button
-            className={`MyWork-nav-button ${
-              active.length === 3 ? "active" : ""
-            }`}
-            onClick={All}
-          >
-            All
-          </button>
-          <button
-            className={`MyWork-nav-button ${
-              active === "Design" ? "active" : ""
-            }`}
-            onClick={Designf}
-          >
-            {" "}
-            Design
-          </button>
-          <button
-            className={`MyWork-nav-button ${
-              active === "Development" ? "active" : ""
-            }`}
-            onClick={Developmentf}
-          >
-            Development
-          </button>
-          <button
-            className={`MyWork-nav-button ${
-              active === "Photography" ? "active" : ""
-            }`}
-            onClick={Photographyf}
-          >
-            Photography
-          </button>
-        </div>
-        {/* <div className="MyWork-bottom-Work">
-          {Development && (
-            <>
-              <div className="Work level-1">
-                <img src="lang.jpg" />
-                <div className="Work-info">
-                  <h5>Development</h5>
-                  <a href="https://www.youtube.com" target="_blank">
-                    Take a Look <i class="fa-solid fa-circle-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div className="Work level-1">
-                <img src="data.jpg" />
-                <div className="Work-info">
-                  <h5>Development</h5>
-                  <a href="https://www.youtube.com" target="_blank">
-                    Take a Look <i class="fa-solid fa-circle-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div className="Work level-1">
-                <img src="Programming.jpg" alt="" />
-                <div className="Work-info">
-                  <h5>Development</h5>
-                  <a href="https://www.youtube.com" target="_blank">
-                    Take a Look <i class="fa-solid fa-circle-right"></i>
-                  </a>
-                </div>
-              </div>
-            </>
-          )}
-          {Design && (
-            <>
-              <div className="Work level-1">
-                <img src="HTML.jpg" />
-                <div className="Work-info">
-                  <h5>Design</h5>
-                  <a href="https://www.youtube.com" target="_blank">
-                    Take a Look <i class="fa-solid fa-circle-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div className="Work level-1">
-                <img src="Webdesign.jpg" alt="" />
-                <div className="Work-info">
-                  <h5>Design</h5>
-                  <a href="https://www.youtube.com" target="_blank">
-                    Take a Look <i class="fa-solid fa-circle-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div className="Work level-1">
-                <img src="UX.jpg" alt="" />
-                <div className="Work-info">
-                  <h5>Design</h5>
-                  <a href="https://www.youtube.com" target="_blank">
-                    Take a Look <i class="fa-solid fa-circle-right"></i>
-                  </a>
-                </div>
-              </div>
-            </>
-          )}
-          {Photography && (
-            <>
-              <div className="Work level-1">
-                <img src="Photography.jpg" alt="" />
-                <div className="Work-info">
-                  <h5>Photography</h5>
-                  <a href="https://www.youtube.com" target="_blank">
-                    Take a Look <i class="fa-solid fa-circle-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div className="Work level-1">
-                <img src="photo.jpg" alt="" />
-                <div className="Work-info">
-                  <h5>Photography</h5>
-                  <a href="https://www.youtube.com" target="_blank">
-                    Take a Look <i class="fa-solid fa-circle-right"></i>
-                  </a>
-                </div>
-              </div>
-            </>
-          )}
-
-          {more && (
-            <>
-              {Design && (
-                <>
-                  <div className="Work level-2">
-                    <img src="Website.jpg" alt="" />
-                    <div className="Work-info">
-                      <h5>Design</h5>
-                      <a href="https://www.youtube.com" target="_blank">
-                        Take a Look <i class="fa-solid fa-circle-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </>
-              )}
-              {Photography && (
-                <>
-                  <div className="Work level-1">
-                    <img src="photo (2).jpg" alt="" />
-                    <div className="Work-info">
-                      <h5>Photography</h5>
-                      <a href="https://www.youtube.com" target="_blank">
-                        Take a Look <i class="fa-solid fa-circle-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="Work level-1">
-                    <img src="photo (3).jpg" alt="" />
-                    <div className="Work-info">
-                      <h5>Photography</h5>
-                      <a href="https://www.youtube.com" target="_blank">
-                        Take a Look <i class="fa-solid fa-circle-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </>
-              )}
-              {Development && (
-                <>
-                  <div className="Work level-2">
-                    <img src="App-Development.jpg" alt="" />
-                    <div className="Work-info">
-                      <h5>Development</h5>
-                      <a href="https://www.youtube.com" target="_blank">
-                        Take a Look <i class="fa-solid fa-circle-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="Work level-2">
-                    <img src="data (2).jpg" alt="" />
-                    <div className="Work-info">
-                      <h5>Development</h5>
-                      <a href="https://www.youtube.com" target="_blank">
-                        Take a Look <i class="fa-solid fa-circle-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="Work level-2">
-                    <img src="game.jpg" alt="" />
-                    <div className="Work-info">
-                      <h5>Development</h5>
-                      <a href="https://www.youtube.com" target="_blank">
-                        Take a Look <i class="fa-solid fa-circle-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </>
-              )}
-            </>
-          )}
-        </div> */}
-        <div className="MyWork-bottom-Work">
-          {Wimg.filter((v) => active.includes(v.cat))
-            .slice(0, more ? Wimg.length : 6)
-            .map((v, i) => {
-              return <Work v={v} key={i} />;
-            })}
-        </div>
-        <div className="button-more-less">
-          {!more && (
-            <>
-              <div className="LoadMore" on onClick={showmore}>
-                <button>
-                  <i class="fa-solid fa-caret-down"></i>
-                </button>
-              </div>
-            </>
-          )}
-          {more && (
-            <>
-              <div className="LoadMore" on onClick={showmore}>
-                <button>
-                  <a href="#MyWork">
-                    <i class="fa-solid fa-caret-up"></i>
-                  </a>
-                </button>
-              </div>
-            </>
-          )}
-        </div>
+      <div className="timeline">
+        {projects.map((proj, index) => (
+          <div className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`} key={proj.title}>
+            <div className="content">
+              <span className="icon">{proj.icon}</span>
+              <h3>{proj.title}</h3>
+              <p>{proj.description}</p>
+              <div className="stack">Tech Stack: {proj.stack}</div>
+              <a href={proj.link} target="_blank" rel="noreferrer">
+                🔗 GitHub
+              </a>
+            </div>
+          </div>
+        ))}
+        <div className="timeline-line"></div>
       </div>
-    </div>
-  );
-}
-function Work({ v }) {
-  return (
-    <div className="Work">
-      <img src={v.img} alt="" />
-      <div className="Work-info">
-        <h5>{v.cat}</h5>
-        <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
-          Take a Look <i class="fa-solid fa-circle-right"></i>
-        </a>
-      </div>
-    </div>
+    </section>
   );
 }

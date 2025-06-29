@@ -4,16 +4,16 @@ function MyService({ theme }) {
     <div className={`MyService ${theme ? "" : "Dark"}`} id="MyService">
       <div className="MyService-Top">
         <div className="MyService-top-heading">
-          <span id="MyService-One">My</span>&nbsp;
-          <span id="MyService-Two">Service</span>
+          <span id="MyService-One">What</span>&nbsp;
+          <span id="MyService-Two">I Build</span>
         </div>
-        <div className="MyWork-top-about">
+        {/* <div className="MyWork-top-about">
           <p>
             "My Services cater to a range of industries, offering expertise in
             Web Development, Web Design. App Development, Programming,
             Photography, and SEO
           </p>
-        </div>
+        </div> */}
         <div className="bottom-bar"></div>
       </div>
       <div className="bottom">
@@ -24,15 +24,14 @@ function MyService({ theme }) {
             }`}
           >
             <div className="box-icon">
-              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-hard-drive"></i>
             </div>
             <div className="MyService-box-heading">
-              <p>Web Developer</p>
+              <p>💾 System Utilities in C++</p>
             </div>
             <div className="MyService-box-content">
               <p>
-                Crafting interactive and dynamic websites using cutting-edge
-                technologies and frameworks to bring ideas to life
+                Built tools that interact directly with raw disk data, including a file recovery utility that extracts PNG, MP3, and PDF files using signature-based scanning and buffer-level operations.
               </p>
             </div>
           </div>
@@ -43,16 +42,14 @@ function MyService({ theme }) {
             }`}
           >
             <div className="box-icon">
-              <i class="fa-solid fa-code"></i>
+              	<i class="fa-solid fa-gears"></i>
             </div>
             <div className="MyService-box-heading">
-              <p>Coder</p>
+              <p>🛠 Assembler & Simulator</p>
             </div>
             <div className="MyService-box-content">
               <p>
-                Transforming ideas into functional solutions, coding is the art
-                of instructing computers to perform tasks, creating innovative
-                and efficient software.
+               Developed a multi-pass RISC-V assembler and a simulator with support for instruction decoding, memory/register management, and step-by-step visualization using a Qt GUI and React frontend.
               </p>
             </div>
           </div>
@@ -62,17 +59,14 @@ function MyService({ theme }) {
             }`}
           >
             <div className="box-icon">
-              <i class="fa-solid fa-lightbulb"></i>
+           	<i class="fa-solid fa-chart-line"></i>
             </div>
             <div className="MyService-box-heading">
-              <p>Problem-Solver</p>
+              <p>Interactive DSA Visualizers</p>
             </div>
             <div className="MyService-box-content">
               <p>
-                Problem solving is the process of identifying challenges,
-                analyzing situations, and devising effective solutions,
-                transforming obstacles into opportunities for growth and
-                innovation.
+               Created web-based visual tools for algorithms like sorting, N-Queens, and Dijkstra’s using Next.js, TypeScript, and React Flow — aimed at intuitive learning and exploration.
               </p>
             </div>
           </div>
@@ -82,15 +76,14 @@ function MyService({ theme }) {
             }`}
           >
             <div className="box-icon">
-              <i class="fa-solid fa-lines-leaning"></i>
+             	<i class="fa-solid fa-laptop-code"></i>
             </div>
             <div className="MyService-box-heading">
-              <p>Learner</p>
+              <p>💻 Frontend for System Tools</p>
             </div>
             <div className="MyService-box-content">
               <p>
-                Embracing knowledge and growth, exploring new subjects and
-                skills to expand horizons and enrich personal development.
+               Designed responsive UIs using React.js and TailwindCSS to give structure and interactivity to core system utilities and learning tools.
               </p>
             </div>
           </div>
@@ -100,15 +93,14 @@ function MyService({ theme }) {
             }`}
           >
             <div className="box-icon">
-              <i class="fa-solid fa-camera"></i>
+             <i class="fa-solid fa-code"></i>
             </div>
             <div className="MyService-box-heading">
-              <p>Photography</p>
+              <p>⚙️ Programming at the Core</p>
             </div>
             <div className="MyService-box-content">
               <p>
-                Capturing moments and stories through the lens transforming
-                ordinary sciones into captivating visu namatives
+                Proficient in C++, Python, and RISC-V, with strong foundations in system-level development, competitive programming, and problem-solving through code.
               </p>
             </div>
           </div>
@@ -118,16 +110,14 @@ function MyService({ theme }) {
             }`}
           >
             <div className="box-icon">
-              <i class="fa-solid fa-headset"></i>
+            	<i class="fa-solid fa-bullseye"></i>
             </div>
             <div className="MyService-box-heading">
-              <p>Gamer</p>
+              <p>🌱 Tools with Real Purpose</p>
             </div>
             <div className="MyService-box-content">
               <p>
-                Immersed in virtual worlds, gamers engage in strategic thinking
-                and quick reflexes, transforming challenges into triumphs and
-                storytelling into interactive experiences.
+                Every project I build solves a real-world problem — whether recovering lost files, simulating low-level systems, or helping learners see how algorithms move.
               </p>
             </div>
           </div>

@@ -1,0 +1,56 @@
+.contact-wrapper {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom right, #0f172a, #1e3a5f);
+  color: #e2e8f0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-header {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  color: #facc15;
+  margin-bottom: 2rem;
+}
+
+.contact-details {
+  max-width: 700px;
+  margin: auto;
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.contact-details p {
+  margin: 1.2rem 0;
+  font-size: 1.05rem;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-details i {
+  color: #facc15;
+  font-size: 1.1rem;
+  min-width: 20px;
+}
+
+.contact-details a {
+  color: #facc15;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-details a:hover {
+  color: #ffe95e;
+}
+
+.collab-note {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  text-align: center;
+}

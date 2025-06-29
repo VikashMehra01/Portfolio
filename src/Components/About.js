@@ -2,15 +2,19 @@ import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 export default function About({ theme }) {
   const [text] = useTypewriter({
-    words: ["Vikash Mehra", "Coder", "Web Developer", "Programmer"],
+    words: ["Vikash Mehra", "System Programmer", "C++ Developer", "Frontend Developer"],
     loop: {},
     delaySpeed: 1000,
     deleteSpeed: 200,
     cursorStyle: "|",
-    typeSpeed: 250,
+    typeSpeed: 300,
   });
   return (
-    <div className={` ${theme ? "" : "Dark"} Main`} id="Home">
+    <div >
+    <div id="Home">
+      <p>Extra Just Started</p>
+    </div>
+    <div className={` ${theme ? "" : "Dark"} Main`} >
       <div className="main-left" id="About">
         <p className="wel">WELCOME!</p>
         <div className="Intro">
@@ -24,14 +28,7 @@ export default function About({ theme }) {
         </div>
 
         <div className="about">
-          "As a Computer Science Engineering student at IIT Ropar, I have
-          developed strong programming skills in C++, Java, and Python. My
-          academic and project experiences focus on software and web
-          development, with a keen interest in algorithms and data structures.I
-          excel in problem-solving and technical innovation. I value
-          collaborative environments with open communication and regular
-          meetings. My goal is to specialize in a dynamic tech field, leveraging
-          my expertise and passion to drive impactful projects and solutions."
+         "I'm a Computer Science student at IIT Ropar with a passion for system programming, C++, and building impactful software tools. My work spans from developing RISC-V simulators and data recovery tools to creating intuitive web-based visualizations. I enjoy solving real-world problems through clean architecture, algorithms, and strong fundamentals. Whether it's at the buffer level or in the browser, I aim to craft solutions that are fast, functional, and future-ready."
         </div>
         <div className="handle">
           <div className="icon">
@@ -93,6 +90,7 @@ export default function About({ theme }) {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
