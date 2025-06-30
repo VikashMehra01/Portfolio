@@ -357,12 +357,21 @@ html {
 }
 
 /*Medida query*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px)  and (min-width:400px){
   .icon{
     margin: 0.75rem;
   }
   .Intro{
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 399px) {
+  .icon{
+    margin-left:0;
+    margin-right: 0.8rem;
+  }
+  .Intro{
+    font-size:1.7rem;
   }
   
 }
