@@ -9,6 +9,7 @@
 
 .change-theme {
   position: fixed;
+  display: none;
   right: 0;
   top: 25%;
   width: 2.2rem;
@@ -198,22 +199,9 @@
   padding: 2rem 1rem 7rem 1rem;
   width: 100%;
   transform-origin: bottom;
-  /* animation: zoom linear; */
-  /* animation-timeline: view(); */
-  /* animation-range: exit -100px;
-  overflow: clip; */
+
 }
-/* @keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  80% {
-    transform: scale(2);
-  }
-  100% {
-    transform: scale(1);
-  } */
-/* } */
+
 .main-left {
   display: flex;
   width: 60%;
@@ -405,10 +393,12 @@
   );
   backdrop-filter: blur(8px);
   transition: all 0.4s linear;
-  animation: box linear;
-  animation-timeline: view();
-  animation-range: entry cover;
+  opacity: 0;
 }
+.MyService-Scroll-Animate {
+  animation: box 1.2s ease-out forwards;
+}
+
 @keyframes box {
   0% {
     opacity: 0;
@@ -423,10 +413,11 @@
     transform: scale(1);
   }
   100% {
-    opacity: 0;
-    transform: scale(0.5);
+    opacity: 1; /* Optional: remove this if you want it to stay visible */
+    transform: scale(1);
   }
 }
+
 .MyService-box-Light {
   border: 1px solid rgb(187, 186, 186);
   background: white;
@@ -464,241 +455,6 @@
   }
 }
 
-/*MyWork*/
-.MyWork {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-top: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.MyWork-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 0 2rem 0;
-}
-.MyWork-top-heading {
-  font-size: 2.5em;
-  font-weight: 700;
-  margin: 1rem;
-}
-
-.MyWork-second {
-  color: orange;
-}
-.MyWork-top-about {
-  font-size: 1em;
-  width: 70%;
-  color: rgb(36, 36, 36);
-}
-.MyWork-bottom {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.MyWork-bottom-nav {
-  width: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 1rem 0;
-}
-.MyWork-nav-button {
-  padding: 0.5rem;
-  margin: 0 1rem 0 1rem;
-  font-size: 1.2em;
-  background-color: transparent;
-  border: none;
-  font-weight: 500;
-  transition: all 0.5s ease-in-out;
-  position: relative;
-}
-.MyWork-nav-button::after {
-  content: "";
-  height: 2px;
-  width: 0%;
-  border-radius: 4px;
-  background-color: white;
-  position: absolute;
-  bottom: 1px;
-  left: 0;
-  transition: all 0.2s linear;
-}
-.MyWork-nav-button:hover:after {
-  width: 100%;
-}
-.MyWork-nav-button.active::after {
-  width: 0%;
-}
-.active {
-  background-color: orange;
-  color: white;
-  border-radius: 8px;
-}
-
-.MyWork-bottom-Work {
-  width: 70%;
-  float: left;
-  columns: 3;
-  gap: 0.5rem;
-}
-.Work {
-  width: minmax(200px, 1fr);
-  position: relative;
-  transition: all 0.25s linear;
-}
-.Work img {
-  width: 100%;
-  width: 100%;
-  vertical-align: center;
-}
-.Work-info {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  transition: all 0.2s linear;
-}
-
-.Work-info h5 {
-  position: absolute;
-  font-size: 2em;
-  top: 4px;
-  left: 6px;
-  color: orange;
-}
-.Work-info a {
-  text-decoration: none;
-  color: blue;
-  font-size: 1.2em;
-  position: absolute;
-  bottom: 0.5rem;
-  right: 4px;
-}
-.Work:hover {
-  transform: scale(1.1);
-  box-shadow: 2px 6px 8px 2px black;
-  z-index: 2;
-  .Work-info {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-.LoadMore {
-  transition: all 0.15s linear;
-}
-.LoadMore button {
-  border: none;
-  background-color: orange;
-  border-radius: 12px;
-  color: white;
-  font-size: 2em;
-  width: 5rem;
-  margin: 0.5rem auto;
-  padding: 0.1rem;
-}
-.LoadMore button:focus {
-  outline: none;
-}
-.LoadMore:hover {
-  transform: scale(1.1);
-}
-/*Resume*/
-.Resume-heading {
-  padding-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.Resume-heading span {
-  font-size: 3em;
-  color: orange;
-}
-.Resume {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 8% 0 8%;
-}
-.Resume-study {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  padding: 4%;
-}
-.Resume-Profession {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  padding: 4%;
-}
-.Resume-box {
-  display: flex;
-  width: 100%;
-  height: 15rem;
-  animation: box 0.4s linear;
-  animation-timeline: view(0%);
-}
-.Resume-bar {
-  width: 15%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  padding: 0 2.5%;
-}
-.left-bar {
-  width: 10%;
-  height: 100%;
-  background-color: orange;
-  position: absolute;
-}
-.Resume-info {
-  width: 85%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-  border: 1px solid rgb(154, 154, 154);
-  border-radius: 12px;
-  padding: 2% 4% 2% 4%;
-}
-.time p {
-  font-size: 1.2em;
-  color: orange;
-}
-.resume-heading {
-  font-size: 1.25em;
-  /* color: rgb(53, 53, 53); */
-  font-weight: 500;
-}
-.Resume-icon {
-  position: absolute;
-  top: 0;
-  min-height: 60px;
-  min-width: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: orange;
-  border-radius: 50%;
-}
-.Resume-icon i {
-  color: white;
-  font-size: 2em;
-}
 .footer {
   width: 100%;
   background-color: orange;
@@ -729,24 +485,5 @@
     margin-left: 0.25rem;
     display: none;
   }
-  .MyWork-bottom-Work {
-    columns: 1;
-  }
-  .Work {
-    margin-bottom: 0.5rem;
-  }
-  .Resume {
-    flex-direction: column;
-    /* font-size: 6px; */
-  }
-  .Resume-study {
-    width: 100%;
-  }
-  .Resume-Profession {
-    width: 100%;
-  }
-  .Resume-icon {
-    min-width: 45px;
-    min-height: 45px;
-  }
+
 }

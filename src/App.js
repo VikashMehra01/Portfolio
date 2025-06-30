@@ -3,8 +3,7 @@ import "./App.css";
 import MyService from "./Components/MyService";
 import MyWork from "./Components/MyWork";
 import Resume from "./Components/Resume";
-// import Blog from "./Components/Blog";
-import ContactMe from "./Components/ContactMe2";
+import ContactMe from "./Components/Contact";
 import Copy from "./Components/Copy";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
@@ -16,20 +15,19 @@ function App() {
   }
   return (
     <>
-      {/* <div
+      <div
         className={`change-theme ${theme ? "Dark" : ""}`}
         onClick={changeTheme}
       >
         <button>
           <i class="fa-solid fa-palette"></i>
         </button>
-      </div> */}
+      </div>
       <Navbar theme={theme} />
       <About theme={theme} />
       <MyService theme={theme} />
       <MyWork theme={theme} />
       <Resume theme={theme} />
-      {/* <Blog theme={theme} /> */}
       <ContactMe theme={theme} />
       <Copy theme={theme} />
     </>

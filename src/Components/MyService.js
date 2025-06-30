@@ -1,5 +1,7 @@
 import React from "react";
+import useScrollAnimate from "./useScrollAnimation";
 function MyService({ theme }) {
+  useScrollAnimate(".MyService-box-Dark", "MyService-Scroll-Animate");
   return (
     <div className={`MyService ${theme ? "" : "Dark"}`} id="MyService">
       <div className="MyService-Top">

@@ -1,4 +1,5 @@
 import React from "react";
+import useScrollAnimate from "./useScrollAnimation";
 import "./TimelineProjects.css";
 
 const projects = [
@@ -51,6 +52,8 @@ const projects = [
 ];
 
 export default function TimelineProjects({ theme }) {
+useScrollAnimate(".timeline-item", "animate-timeline");
+
   return (
     <section className={`timeline-wrapper ${theme ? "" : "Dark"}`} id="MyWork">
       <div className="timeline-header">

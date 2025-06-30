@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import BlogDetail from "./Components/BlogDetail";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 let Allroutes = createBrowserRouter([
@@ -12,10 +12,7 @@ let Allroutes = createBrowserRouter([
     path: "/",
     element: <App />,
   },
-  {
-    path: "blogs/:id",
-    element: <BlogDetail />,
-  },
+
 ]);
 root.render(
   <React.StrictMode>

@@ -39,7 +39,7 @@ export default function ExperienceSkills({ theme }) {
         <div className="skills-grid">
           <div>
             <h4>Languages</h4>
-            <p>C++, Python, JavaScript, HTML, CSS, RISC-V Assembly</p>
+            <p>C++, Python, Scheme, Prolog, JavaScript, HTML, CSS, RISC-V Assembly</p>
           </div>
           <div>
             <h4>Frameworks & Tools</h4>
