@@ -361,4 +361,8 @@ html {
   .icon{
     margin: 0.75rem;
   }
+  .Intro{
+    font-size: 2rem;
+  }
+  
 }
