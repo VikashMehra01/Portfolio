@@ -3,7 +3,11 @@ import React, { useState } from "react";
 export default function Navbar({ theme }) {
   const [display, setdisplay] = useState(false);
   function show() {
-    setdisplay(!display);
+    if(display==="background"){
+      setdisplay("");
+    }else{
+      setdisplay("background");
+    }
   }
   return (
     <>
@@ -20,32 +24,26 @@ export default function Navbar({ theme }) {
         </div>
         <div className="nav-right">
           <a href="#Home">Home</a>
-          {/* <a href="#About">ABOUT</a> */}
           <a href="#MyService">What I Build</a>
           <a href="#MyWork">Projects</a>
           <a href="#Experience">Experience & Skills</a>
-          {/* <a href="#Blog">BLOG</a> */}
           <a href="#Contact">ContactMe</a>
         </div>
       </div>
       <div
-        className={`sidebar-outer ${display ? "showOut" : ""}`}
+        className={`sidebar-outer ${display ? "background" : ""}`}
         onMouseEnter={show}
       ></div>
       <div
         className={`sidebar ${theme ? "Dark-min" : ""} ${
-          display ? "showIn" : ""
+          display ? "showIn" : "showOut"
         }`}
       >
-        {/* <h5>Vikash Mehra</h5>
-          <hr /> */}
-        <a href="#Home">HOME</a>
-        <a href="#About">ABOUT</a>
-        <a href="#MyService">SERVICE</a>
-        <a href="#MyWork">WORK</a>
-        <a href="#Resume">RESUME</a>
-        <a href="#Blog">BLOG</a>
-        <a href="#Contact">CONTACT</a>
+          <a href="#Home">Home</a>
+          <a href="#MyService">What I Build</a>
+          <a href="#MyWork">Projects</a>
+          <a href="#Experience">Experience & Skills</a>
+          <a href="#Contact">ContactMe</a>
       </div>
     </>
   );

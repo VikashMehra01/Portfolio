@@ -58,3 +58,10 @@
   font-size: 0.95rem;
   text-align: center;
 }
+
+@media  screen and (max-width :550px) {
+  .Contact-detail{
+    display: flex;
+    flex-direction: column;
+  }
+}
