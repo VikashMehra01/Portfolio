@@ -130,7 +130,7 @@ a {
   opacity: 1 !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .timeline {
     padding: 0 1rem;
   }
@@ -190,5 +190,16 @@ a {
     transform: none; /* Disable hover zoom on mobile */
   }
 }
+
+@media screen and (max-width:1500px) and (min-width:801px) {
+  .timeline-item.left {
+  transform: translateX(-100px);
+}
+.timeline-item.right {
+  transform: translateX(100px);
+}
+}
+
+
 
 

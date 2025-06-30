@@ -317,15 +317,10 @@ html {
   }
   .about {
     font-size: 1.2em;
+    padding-right: 1rem;
+    text-align: justify;
   }
-  /* .icon {
-    width: 2.25rem;
-    height: 2.25rem;
-  } */
-  .leetcode {
-    height: 1.45rem;
-    width: 1.45rem;
-  }
+
   .Main {
     flex-direction: column;
     align-items: center;
@@ -341,6 +336,14 @@ html {
     padding-right: 1.5rem;
     transform: translateY(15px);
   }
+  .nav-right a {
+    margin: 0.25rem;
+  }
+  .nav-right {
+    overflow: auto;
+    margin-left: 0.25rem;
+    display: none;
+  }
 }
 
 .footer {
@@ -354,15 +357,8 @@ html {
 }
 
 /*Medida query*/
-@media screen and (max-width: 800px) {
-
-  .nav-right a {
-    margin: 0.25rem;
+@media screen and (max-width: 500px) {
+  .icon{
+    margin: 0.75rem;
   }
-  .nav-right {
-    overflow: auto;
-    margin-left: 0.25rem;
-    display: none;
-  }
-
 }
