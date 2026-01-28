@@ -5,17 +5,21 @@ export default function useScrollAnimate(selector, animationClass, options = { t
     const elements = document.querySelectorAll(selector);
     if (!elements.length) return;
 
+    // Older/mobile browsers or test environments might not support this.
+    if (typeof IntersectionObserver === "undefined") {
+      elements.forEach((el) => el.classList.add(animationClass));
+      return;
+    }
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add(animationClass);
-        } else {
-          entry.target.classList.remove(animationClass); // Optional: for repeat animation
         }
       });
     }, options);
 
     elements.forEach(el => observer.observe(el));
-    return () => elements.forEach(el => observer.unobserve(el));
+    return () => observer.disconnect();
   }, [selector, animationClass, options]);
 }

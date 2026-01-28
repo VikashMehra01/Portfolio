@@ -27,7 +27,7 @@ function MyService({ theme }) {
             }`}
           >
             <div className="box-icon">
-              <i class="fa-solid fa-hard-drive"></i>
+              <i className="fa-solid fa-hard-drive"></i>
             </div>
             <div className="MyService-box-heading">
               <p>💾 System Utilities in C++</p>
@@ -45,7 +45,7 @@ function MyService({ theme }) {
             }`}
           >
             <div className="box-icon">
-              	<i class="fa-solid fa-gears"></i>
+	              <i className="fa-solid fa-gears"></i>
             </div>
             <div className="MyService-box-heading">
               <p>🛠 Assembler & Simulator</p>
@@ -62,7 +62,7 @@ function MyService({ theme }) {
             }`}
           >
             <div className="box-icon">
-           	<i class="fa-solid fa-chart-line"></i>
+		    <i className="fa-solid fa-chart-line"></i>
             </div>
             <div className="MyService-box-heading">
               <p>Interactive DSA Visualizers</p>
@@ -79,7 +79,7 @@ function MyService({ theme }) {
             }`}
           >
             <div className="box-icon">
-             	<i class="fa-solid fa-laptop-code"></i>
+             	<i className="fa-solid fa-laptop-code"></i>
             </div>
             <div className="MyService-box-heading">
               <p>💻 Frontend for System Tools</p>
@@ -96,7 +96,7 @@ function MyService({ theme }) {
             }`}
           >
             <div className="box-icon">
-             <i class="fa-solid fa-code"></i>
+             <i className="fa-solid fa-code"></i>
             </div>
             <div className="MyService-box-heading">
               <p>⚙️ Programming at the Core</p>
@@ -113,7 +113,7 @@ function MyService({ theme }) {
             }`}
           >
             <div className="box-icon">
-            	<i class="fa-solid fa-bullseye"></i>
+	            <i className="fa-solid fa-bullseye"></i>
             </div>
             <div className="MyService-box-heading">
               <p>🌱 Tools with Real Purpose</p>

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { LINKS } from "../utils/links";
 import { motion } from "framer-motion";
 import Reveal from "./motion/Reveal";
 export default function About({ theme }) {
+  const [heroLoaded, setHeroLoaded] = useState(false);
   const [text] = useTypewriter({
     words: ["Vikash Mehra", "System Programmer", "C++ Developer", "Frontend Developer"],
     loop: {},
@@ -99,11 +100,23 @@ export default function About({ theme }) {
           <div className="hero-blob" />
           <div className="circle"></div>
           <motion.div
-            className="thanos"
+            className={`thanos-wrapper ${heroLoaded ? "is-loaded" : ""}`}
             animate={{ y: [0, -8, 0], rotate: [0, 0.6, 0] }}
             transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
           >
-            <img src="/vikash2.png" alt="" className="thanos" />
+            <img
+              src="/vikash2.png"
+              alt="Vikash Mehra"
+              className={`thanos-img ${heroLoaded ? "is-loaded" : ""}`}
+              width={512}
+              height={512}
+              decoding="async"
+              fetchPriority="high"
+              loading="eager"
+              onLoad={() => setHeroLoaded(true)}
+              onError={() => setHeroLoaded(true)}
+              draggable={false}
+            />
           </motion.div>
         </div>
       </Reveal>
