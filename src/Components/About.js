@@ -1,5 +1,6 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { LINKS } from "../utils/links";
 export default function About({ theme }) {
   const [text] = useTypewriter({
     words: ["Vikash Mehra", "System Programmer", "C++ Developer", "Frontend Developer"],
@@ -33,7 +34,7 @@ export default function About({ theme }) {
         <div className="handle">
           <div className="icon">
             <a
-              href="https://leetcode.com/u/VikashMehra01/"
+              href={LINKS.leetcode}
               target="_blank"
               rel="noreferrer"
             >
@@ -42,7 +43,7 @@ export default function About({ theme }) {
           </div>
           <div className="icon">
             <a
-              href="https://www.geeksforgeeks.org/user/2023csterb/"
+              href={LINKS.geeksForGeeks}
               target="_blank"
               rel="noreferrer"
             >
@@ -55,7 +56,7 @@ export default function About({ theme }) {
           </div>
           <div className="icon">
             <a
-              href="https://www.linkedin.com/in/vikash-kumar-173691287/"
+              href={LINKS.linkedin}
               target="_blank"
               rel="noreferrer"
             >
@@ -64,7 +65,7 @@ export default function About({ theme }) {
           </div>
           <div className="icon">
             <a
-              href="https://www.instagram.com/vikash_mehra23/"
+              href={LINKS.instagram}
               target="_blank"
               rel="noreferrer"
             >
@@ -73,7 +74,7 @@ export default function About({ theme }) {
           </div>
           <div className="icon">
             <a
-              href="https://github.com/Vikash1172"
+              href={LINKS.github}
               target="_blank"
               rel="noreferrer"
             >
@@ -86,7 +87,7 @@ export default function About({ theme }) {
         <div className="img">
           <div className="circle"></div>
           <div className="thanos">
-            <img src="/vikashkumar.png" alt="" className="thanos" />
+            <img src="/vikash2.png" alt="" className="thanos" />
           </div>
         </div>
       </div>

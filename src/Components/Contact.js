@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import { LINKS } from "../utils/links";
 
 export default function ContactMe() {
   return (
@@ -15,14 +16,14 @@ export default function ContactMe() {
         </p>
         <p className="Contact-detail">
           <i className="fa-brands fa-github"></i> GitHub:{" "}
-          <a href="https://github.com/VikashMehra01" target="_blank" rel="noreferrer">
-            github.com/VikashMehra01
+          <a href={LINKS.github} target="_blank" rel="noreferrer">
+            {LINKS.github}
           </a>
         </p>
         <p className="Contact-detail">
           <i className="fa-brands fa-linkedin"></i> LinkedIn:{" "}
-          <a href="https://www.linkedin.com/in/vikash-kumar-173691287" target="_blank" rel="noreferrer">
-            linkedin.com/in/vikash-kumar-173691287
+          <a href={LINKS.linkedin} target="_blank" rel="noreferrer">
+            {LINKS.linkedin}
           </a>
         </p>
         <p className="Contact-detail">
