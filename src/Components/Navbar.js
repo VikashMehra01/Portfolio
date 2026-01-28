@@ -18,7 +18,7 @@ export default function Navbar({ theme }) {
             style={{ background: "transparent" }}
             onClick={show}
           >
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
           </button>
           <p id="logo">Vikash Mehra</p>
         </div>

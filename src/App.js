@@ -7,6 +7,10 @@ import ContactMe from "./Components/Contact";
 import Copy from "./Components/Copy";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
+import ScrollProgress from "./Components/ScrollProgress";
+import ScrollToTop from "./Components/ScrollToTop";
+import ParticleBackground from "./Components/fx/ParticleBackground";
+import CursorGlow from "./Components/fx/CursorGlow";
 
 function App() {
   const [theme, settheme] = useState(false);
@@ -15,12 +19,15 @@ function App() {
   }
   return (
     <>
+      <ScrollProgress theme={theme} />
+      <ParticleBackground theme={theme} />
+      <CursorGlow theme={theme} />
       <div
         className={`change-theme ${theme ? "Dark" : ""}`}
         onClick={changeTheme}
       >
         <button>
-          <i class="fa-solid fa-palette"></i>
+          <i className="fa-solid fa-palette"></i>
         </button>
       </div>
       <Navbar theme={theme} />
@@ -30,6 +37,7 @@ function App() {
       <Resume theme={theme} />
       <ContactMe theme={theme} />
       <Copy theme={theme} />
+      <ScrollToTop theme={theme} />
     </>
   );
 }

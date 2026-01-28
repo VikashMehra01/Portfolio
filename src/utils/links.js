@@ -7,5 +7,5 @@ export const LINKS = {
   instagram: "https://www.instagram.com/vikashmehra03/",
   leetcode: "https://leetcode.com/u/Vikash_Mehra/",
   geeksForGeeks: "https://www.geeksforgeeks.org/profile/2023csterb",
- 
+
 };
